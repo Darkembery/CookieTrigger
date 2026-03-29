@@ -1,0 +1,1 @@
+if (!instance_exists(obj_enemyall)) and can_start

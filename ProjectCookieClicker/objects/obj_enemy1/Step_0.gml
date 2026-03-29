@@ -5,5 +5,6 @@ if (instance_exists(obj_player))
 
 if (hp <= 0) and !flashing
 {
+	global.timer += timer_reward
 	instance_destroy();
 }

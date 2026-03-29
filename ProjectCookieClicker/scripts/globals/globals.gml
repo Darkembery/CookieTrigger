@@ -4,5 +4,6 @@ global.highest_wave = 1;
 
 //upgrade area
 global.damage = 5;
-global.time = 0;
+global.timer = 0;
+global.timer_start_value = 40;
 

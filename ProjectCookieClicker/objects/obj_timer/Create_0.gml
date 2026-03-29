@@ -1,0 +1,1 @@
+timer_cooldown = 0;
