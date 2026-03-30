@@ -1,4 +1,4 @@
-//cooldowns
+#region cooldowns e se o dono existe mais detecção da movimentação do player, assim mudando a escala
 if shoot_cooldown > 0
 {
 shoot_cooldown--
@@ -24,7 +24,9 @@ image_xscale = 1
 
 else if obj_player.x <= x - 16
 image_xscale = -1
+#endregion
 
+#region Código do tiro, e angulo igual ao player, se puder. (Thanks to ReverseTowerDefense)
 if (instance_exists(obj_player))
 {
 var dir_target = point_direction(x, y, obj_player.x, obj_player.y);
@@ -52,4 +54,6 @@ b.owner = id;
 		}
 	}
 }
+
+#endregion
 

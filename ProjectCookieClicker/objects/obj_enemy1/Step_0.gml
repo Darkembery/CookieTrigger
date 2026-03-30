@@ -1,3 +1,4 @@
+#region segue player e morte.
 if can_follow and instance_exists(obj_player) and obj_player.can_take_damage
 {
 	move_towards_point(obj_player.x, obj_player.y, move_speed)	
@@ -14,9 +15,10 @@ if (hp <= 0)
 	global.enemy1_kills++
 	instance_destroy();
 }
+#endregion
 
 
-
+#region piscando se tomar dano.
 if flashing
 {
 	image_blend = c_gray
@@ -33,7 +35,9 @@ image_xscale = lerp(image_xscale, 1, 0.1)
 
 if (image_yscale != 1)
 image_yscale = lerp(image_yscale, 1, 0.1)
+#endregion
 
+#region colisão com o player
 if place_meeting(x, y, obj_player)
 {
 	if (can_collide)
@@ -55,3 +59,4 @@ can_take_damage = true;
 	}
 }	
 }
+#endregion

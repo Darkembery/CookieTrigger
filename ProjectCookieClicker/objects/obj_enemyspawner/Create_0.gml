@@ -4,7 +4,7 @@ can_spawn_enemy2 = false;
 number_of_spawns = 0;
 
 alarm[0] = spawn_delay
-alarm[1] = 2400
+alarm[1] = 3000
 
 function spawn()
 {

@@ -1,3 +1,4 @@
+#region limitador de cookies
 if global.cookies >= 3
 {
 	global.cookies = 3
@@ -14,3 +15,5 @@ else if global.cookies == 3 and global.cookies_existentes > 0
 {
 	instance_destroy(obj_cookie)	
 }
+
+#endregion

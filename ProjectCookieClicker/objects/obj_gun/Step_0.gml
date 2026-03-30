@@ -1,6 +1,6 @@
-if (instance_exists(obj_player))
+ #region Código base da arma. Trava no player, atira, e tem o cooldown. 
+ if (instance_exists(obj_player))
 {
-
     // Posiciona a arma no player
     x = obj_player.x + 18;
     y = obj_player.y + 14;
@@ -18,10 +18,10 @@ if (instance_exists(obj_player))
 		reload();
 	}
 	
-
     if (global.fire_cooldown > 0)
 	global.fire_cooldown--;
 
+	//tiro
     if (mouse_check_button(mb_left) 
 		and global.fire_cooldown <= 0 
 		and global.bullets > 0)
@@ -46,5 +46,6 @@ else
 {
 	instance_destroy();	
 }
+#endregion
 
 

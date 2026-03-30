@@ -1,4 +1,4 @@
-//segue player
+#region segue player e detecta se pode atirar
 if (can_follow) and (obj_player.can_take_damage)
 {
 	move_towards_point(obj_player.x - 75, obj_player.y - 75, move_speed)	
@@ -15,11 +15,9 @@ else if distance_to_object(obj_player) > 75
 	move_speed = 1	
 	can_aim = false;
 }
+#endregion
 
-//virar
-
-
-//tiro
+#region tiro
 if (can_aim)
 {
 	with gun
@@ -35,8 +33,9 @@ else if (!can_aim)
 		can_aim = false
 	}	
 }
+#endregion
 
-//morte
+#region morte
 if (hp <= 0)
 {
 	global.timer += timer_reward
@@ -60,7 +59,9 @@ image_xscale = lerp(image_xscale, 1, 0.1)
 
 if (image_yscale != 1)
 image_yscale = lerp(image_yscale, 1, 0.1)
+#endregion
 
+#region colissão com o player = dano.
 if place_meeting(x, y, obj_player)
 {
 	if (can_collide)
@@ -79,6 +80,7 @@ with other
 image_alpha = 0.5
 alarm[1] = 90
 can_take_damage = true;
-	}
-}	
+		}
+	}	
 }
+#endregion

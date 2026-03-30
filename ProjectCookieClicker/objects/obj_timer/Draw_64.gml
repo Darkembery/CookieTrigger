@@ -10,6 +10,7 @@ draw_text(20, 100, "Tempo Passado: " + string(global.time_alive))
 draw_text(20, 140, "Tempo Máximo: " + string(global.highest_time_alive))
 }
 
+//mostra o timer, e se é igual a 0, então acabou.
 draw_set_font(font_hudBoldBig)
 if global.timer > 0
 draw_text(view_wport / 2 - 200, view_hport / 2 - 300,

@@ -1,3 +1,4 @@
+#region cooldowns e detectores de tempo/o tempo atual.
 if timer_cooldown > 0
 timer_cooldown--
 
@@ -24,6 +25,8 @@ if (global.highest_time_alive <= global.time_alive)
 		global.highest_time_alive = global.time_alive	
 	}
 }
+
+#endregion
 
 
 

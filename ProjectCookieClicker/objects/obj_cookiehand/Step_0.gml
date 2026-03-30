@@ -1,3 +1,4 @@
+//trava na mão do player;
 if (global.cookies > 0)
 {
 	x = obj_player.x - 18;
