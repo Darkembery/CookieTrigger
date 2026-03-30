@@ -5,3 +5,4 @@ image_yscale = 2;
 
 //hp = global.timer
 
+can_take_damage = true;

@@ -1,4 +1,5 @@
-if (instance_exists(obj_player)) {
+if (instance_exists(obj_player))
+{
 
     // Posiciona a arma no player
     x = obj_player.x + 18;
@@ -10,15 +11,40 @@ if (instance_exists(obj_player)) {
     // Mantém sprite da arma normal
     image_xscale = 1;
     image_yscale = 1;
+	
+	//reload
+	if (keyboard_check_pressed(ord("R")))
+	{
+		reload();
+	}
+	
 
-    if (fire_cooldown > 0) fire_cooldown--;
+    if (global.fire_cooldown > 0)
+	global.fire_cooldown--;
 
-    if (mouse_check_button(mb_left) && fire_cooldown <= 0) {
+    if (mouse_check_button(mb_left) 
+		and global.fire_cooldown <= 0 
+		and global.bullets > 0)
+		{
         var b = instance_create_depth(x, y, 5, obj_bullet);
-        b.speed = bullet_speed;
+		screenshake(2)
+        b.speed = global.bullet_speed;
         b.direction = point_direction(x, y, mouse_x, mouse_y);
         b.image_angle = b.direction;
-
-        fire_cooldown = fire_cooldown_max;
+        global.fire_cooldown = global.fire_cooldown_max;
+		global.bullets--
     }
+	
+	else if (mouse_check_button(mb_left)) and global.bullets == 0 and global.cookies > 0
+	{
+		reload();
+	}
+	
 }
+
+else 
+{
+	instance_destroy();	
+}
+
+
