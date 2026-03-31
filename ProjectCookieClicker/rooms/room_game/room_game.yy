@@ -106,7 +106,7 @@
   "name":"room_game",
   "parent":{
     "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "path":"folders/Objects/UX/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

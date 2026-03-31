@@ -1,5 +1,5 @@
 #region segue player e morte.
-if can_follow and instance_exists(obj_player) and obj_player.can_take_damage
+if can_follow and instance_exists(obj_player)
 {
 	move_towards_point(obj_player.x, obj_player.y, move_speed)	
 }
@@ -40,22 +40,19 @@ image_yscale = lerp(image_yscale, 1, 0.1)
 #region colisão com o player
 if place_meeting(x, y, obj_player)
 {
-	if (can_collide)
+	if (can_collide) and obj_player.can_take_damage
 {
 global.timer -= damage_to_player
-move_speed = 0
 can_follow = false;
 can_collide = false;
 alarm[1] = 60;
 knockback_x = sign(x - other.x)
 knockback_y = sign(y - other.y)
 
-
 with obj_player
 {
-image_alpha = 0.5
 alarm[1] = 90
-can_take_damage = true;
+can_take_damage = false;
 	}
 }	
 }

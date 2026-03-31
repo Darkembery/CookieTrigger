@@ -161,7 +161,7 @@
   "name":"room_kitchen",
   "parent":{
     "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "path":"folders/Objects/UX/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

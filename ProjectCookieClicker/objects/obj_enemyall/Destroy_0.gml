@@ -14,3 +14,9 @@ and global.can_collect_cookies
 {
 instance_create_layer(x, y, "Player", obj_cookie);
 }
+
+if global.timer > 0
+{
+var points = instance_create_layer(x, y, "HUD", obj_timerpoints)
+points.value = self.timer_reward
+}

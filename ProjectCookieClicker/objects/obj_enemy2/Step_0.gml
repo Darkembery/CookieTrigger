@@ -1,5 +1,5 @@
 #region segue player e detecta se pode atirar
-if (can_follow) and (obj_player.can_take_damage)
+if (can_follow)
 {
 	move_towards_point(obj_player.x - 75, obj_player.y - 75, move_speed)	
 }
@@ -64,10 +64,9 @@ image_yscale = lerp(image_yscale, 1, 0.1)
 #region colissão com o player = dano.
 if place_meeting(x, y, obj_player)
 {
-	if (can_collide)
+	if (can_collide) and obj_player.can_take_damage
 {
 global.timer -= damage_to_player
-move_speed = 0
 can_follow = false;
 can_collide = false;
 alarm[1] = 60;
@@ -75,11 +74,10 @@ knockback_x = sign(x - other.x)
 knockback_y = sign(y - other.y)
 
 
-with other
+with obj_player
 {
-image_alpha = 0.5
 alarm[1] = 90
-can_take_damage = true;
+can_take_damage = false;
 		}
 	}	
 }

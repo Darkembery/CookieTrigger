@@ -4,13 +4,13 @@ can_spawn_enemy2 = false;
 number_of_spawns = 0;
 
 alarm[0] = spawn_delay
-alarm[1] = 3000
+alarm[1] = 1200
 
 function spawn()
 {
+	randomize();
 	var x_location = choose(-32, -64, 680, 660, 700)
 	var y_location = choose(-32, - 64, 390, 400, 420)
-	randomize();
 	
 	if (!can_spawn_enemy2)
 	{
@@ -20,16 +20,16 @@ function spawn()
 	
 	else
 	{
-	var spawn = irandom_range(1, 3)
+	var spawn = irandom_range(1, 2)
 	randomize();
 	
-	if spawn <= 2
+	if spawn == 1
 	{
 		instance_create_layer(x_location, y_location, "Enemys", obj_enemy1)	
 		show_debug_message("Inimigo 1 Spawnado.")
 	}
 	
-	else if spawn == 3
+	else if spawn == 2
 	{
 		instance_create_layer(x_location, y_location, "Enemys", obj_enemy2)
 		show_debug_message("Inimigo 2 Spawnado.")

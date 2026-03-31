@@ -29,3 +29,18 @@ global.cookies_existentes = instance_number(obj_cookie)
 if global.reload_cooldown > 0
 global.reload_cooldown--
 #endregion
+
+#region dano
+if !can_take_damage
+image_alpha = 0.5	
+else
+image_alpha = 1
+#endregion
+
+#region amassadinha
+if (image_xscale != 2)
+image_xscale = lerp(image_xscale, 1, 0.1)
+
+if (image_yscale != 2)
+image_yscale = lerp(image_yscale, 1, 0.1)
+#endregion

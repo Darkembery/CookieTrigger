@@ -1,7 +1,7 @@
-move_speed = 1.4;
+move_speed = 1.6;
 flashing = false;
 hp = 40
-damage_to_player = 3
+damage_to_player = 4
 can_follow = true;
 timer_reward = irandom_range(1, damage_to_player)
 can_collide = true;

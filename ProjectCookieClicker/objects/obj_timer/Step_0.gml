@@ -14,6 +14,9 @@ if global.timer <= 0
 	if (instance_exists(obj_enemyall))
 	instance_destroy(obj_enemyall)
 	
+	if (instance_exists(obj_cookie))
+	instance_destroy(obj_cookie);
+	
 	if (keyboard_check_pressed(ord("R"))) and global.debug
 	room_restart()
 	
@@ -25,7 +28,7 @@ if global.timer <= 0
 	if (can_shake)
 	{
 		can_shake = false
-		screenshake(8)
+		screenshake(15)
 	}
 	
 	
