@@ -20,19 +20,34 @@ function spawn()
 	
 	else
 	{
-	var spawn = choose(1, 2)
+	var spawn = irandom_range(1, 3)
 	randomize();
 	
-	if spawn == 1
+	if spawn <= 2
 	{
 		instance_create_layer(x_location, y_location, "Enemys", obj_enemy1)	
 		show_debug_message("Inimigo 1 Spawnado.")
 	}
 	
-	else if spawn == 2
+	else if spawn == 3
 	{
 		instance_create_layer(x_location, y_location, "Enemys", obj_enemy2)
 		show_debug_message("Inimigo 2 Spawnado.")
 		}
 	}
+}
+
+function spawn_debug()
+{
+	show_debug_message("O Spawn Foi reduzido para: " + string(spawn_delay))	
+	show_debug_message("O Spawn Foi reduzido para: " + string(spawn_delay))	
+	show_debug_message("O Spawn Foi reduzido para: " + string(spawn_delay))	
+	show_debug_message("O Spawn Foi reduzido para: " + string(spawn_delay))	
+	show_debug_message("O Spawn Foi reduzido para: " + string(spawn_delay))	
+	show_debug_message("O Spawn Foi reduzido para: " + string(spawn_delay))	
+	show_debug_message("O Spawn Foi reduzido para: " + string(spawn_delay))	
+	show_debug_message("O Spawn Foi reduzido para: " + string(spawn_delay))	
+	show_debug_message("O Spawn Foi reduzido para: " + string(spawn_delay))	
+	show_debug_message("O Spawn Foi reduzido para: " + string(spawn_delay))	
+	
 }

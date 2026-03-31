@@ -2,8 +2,20 @@
 //spawn_delay--
 
 #region dificuldade aumentando de acordo com quantos inimigos foram spawnados.
+if number_of_spawns >= 200
+{
+	spawn_delay = 50
+}
 
-if number_of_spawns >= 125
+else if number_of_spawns == 175
+{
+	spawn_delay = 55	
+}
+else if number_of_spawns == 150
+{
+	spawn_delay = 60	
+}
+else if number_of_spawns == 125
 {
 	spawn_delay =  65	
 }

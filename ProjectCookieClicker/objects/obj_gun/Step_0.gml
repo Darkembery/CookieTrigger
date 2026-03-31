@@ -27,7 +27,7 @@
 		and global.bullets > 0)
 		{
         var b = instance_create_depth(x, y, 5, obj_bullet);
-		screenshake(2)
+		screenshake(3)
         b.speed = global.bullet_speed;
         b.direction = point_direction(x, y, mouse_x, mouse_y);
         b.image_angle = b.direction;

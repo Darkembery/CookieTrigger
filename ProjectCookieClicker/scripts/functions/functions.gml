@@ -20,3 +20,19 @@ function reload()
 	global.cookies--	
 	}
 }
+
+function fade()
+{
+var _targetroom = argument0;
+var _duration = argument1;
+var _color = argument2;
+
+var _instance = instance_create_layer(0,0, "Instances",obj_fade)
+
+with (_instance)
+{
+	targetroom = _targetroom;
+	duration = _duration;
+	color = _color;	
+	}
+}
