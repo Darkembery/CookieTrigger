@@ -32,7 +32,7 @@ if global.timer <= 0
 	if (can_shake)
 	{
 		can_shake = false
-		screenshake(10)
+		screenshake(10, 15)
 	}
 	
 	

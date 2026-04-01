@@ -73,7 +73,7 @@ can_collide = false;
 alarm[1] = 60;
 knockback_x = sign(x - other.x)
 knockback_y = sign(y - other.y)
-screenshake(5)
+screenshake(5,5)
 
 
 with obj_player

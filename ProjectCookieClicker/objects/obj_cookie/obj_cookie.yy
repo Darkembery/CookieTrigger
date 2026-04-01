@@ -14,7 +14,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"cookie",
-    "path":"folders/Objects/Player/cookie.yy",
+    "path":"folders/Player/cookie.yy",
   },
   "parentObjectId":null,
   "persistent":false,

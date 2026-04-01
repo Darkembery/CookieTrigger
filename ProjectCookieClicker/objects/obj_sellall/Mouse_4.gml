@@ -6,6 +6,11 @@ global.enemy1_kills = 0;
 show_debug_message("Venda realizada! Você ganhou: " + string(sell_value));
 total_earned += sell_value;
 sell = true;
+if (!instance_exists(obj_fadeout_white))
+{
+var fad = instance_create_layer(0,0,"Instances", obj_fadeout_white)
+fad.image_blend = c_green
+}
 //if (!audio_is_playing(sfx_purchase_sucess))
 	//audio_play_sound(sfx_purchase_sucess, 1, 0)
 }
@@ -25,6 +30,11 @@ global.enemy2_kills = 0;
 show_debug_message("Venda realizada! Você ganhou: " + string(sell_value));
 total_earned += sell_value
 sell = true;
+if (!instance_exists(obj_fadeout_white))
+{
+var fad = instance_create_layer(0,0,"Instances", obj_fadeout_white)
+fad.image_blend = c_green
+}
 
 //if (!audio_is_playing(sfx_purchase_sucess))
 	//audio_play_sound(sfx_purchase_sucess, 1, 0)
