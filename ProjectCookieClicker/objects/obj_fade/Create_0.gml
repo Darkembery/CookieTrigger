@@ -1,7 +1,11 @@
 width = display_get_gui_width();
 height = display_get_gui_height();
 
-duration = 15;
+global.can_act = false;
+
+can_run = true;
+
+duration = 0
 targetroom = room;
 color = c_black;
 

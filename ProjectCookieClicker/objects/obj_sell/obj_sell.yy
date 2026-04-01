@@ -11,8 +11,8 @@
   "name":"obj_sell",
   "overriddenProperties":[],
   "parent":{
-    "name":"Interativos",
-    "path":"folders/Objects/Kitchen/Interativos.yy",
+    "name":"sell",
+    "path":"folders/Objects/HUD/Kitchen/Interativos/sell.yy",
   },
   "parentObjectId":null,
   "persistent":false,

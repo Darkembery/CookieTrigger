@@ -2,6 +2,9 @@
 if (other.can_take_damage)
 {
 global.timer -= obj_enemy2.damage_to_player 
+screenshake(5, 5)
+var points = instance_create_layer(x, y, "Instances", obj_timerlosepoints)
+points.value = obj_enemy2.damage_to_player
 
 with other
 {

@@ -4,7 +4,7 @@ global.time_alive = 1; // save
 //upgrade area
 global.damage = 10; // save e upgrade
 global.timer = 0; 
-global.timer_start_value = 40; // save e upgrade
+global.timer_start_value = 25; // save e upgrade
 
 //config arma
 global.fire_cooldown = 0;
@@ -21,11 +21,15 @@ global.bullets = global.bullets_per_cookie
 global.reload_cooldown = 0
 
 //config inimigos
-global.enemy1_kills = 0;
-global.enemy2_kills = 0;
+global.enemy1_kills = 10;
+global.enemy2_kills = 10;
+global.enemy1_value = 5;
+global.enemy2_value = 15;
 
 //config player
 global.cash = 0;
+global.can_act = true;
+global.pause = false;
 
 //config game
 global.debug = true;

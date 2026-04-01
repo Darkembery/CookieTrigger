@@ -14,7 +14,7 @@
   "name":"room_upgradesroom",
   "parent":{
     "name":"Rooms",
-    "path":"folders/Objects/UX/Rooms.yy",
+    "path":"folders/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

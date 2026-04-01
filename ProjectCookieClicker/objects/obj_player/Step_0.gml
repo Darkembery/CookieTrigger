@@ -1,4 +1,7 @@
 #region Movimentação
+if global.pause exit
+if (global.can_act)
+{
 var mx = (keyboard_check(ord("D"))) - (keyboard_check(ord("A")))
 
 var my = (keyboard_check(ord("S"))) - (keyboard_check(ord("W")))
@@ -15,6 +18,7 @@ if (len > 0)
 
 x += mx * move_speed;
 y += my * move_speed;
+}
 #endregion
 #region Spawn biscoito na mão
 if (global.cookies > 0) and (!instance_exists(obj_cookiehand))

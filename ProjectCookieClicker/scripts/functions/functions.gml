@@ -1,15 +1,23 @@
 function start_game()
 {
 	global.timer = global.timer_start_value;
-	global.enemy1_kills = 0
-	global.enemy2_kills = 0;
+	global.bullets = global.bullets_per_cookie;
 }
 
-function screenshake(_value)
+function screenshake(_value1, _value2)
 {
-	if (!instance_exists(obj_screenshake)) and global.screen_shake_active
+	if !global.screen_shake_active exit
+	if (!instance_exists(obj_screenshake))
 	instance_create_layer(0, 0, "HUD", obj_screenshake)	
-	obj_screenshake.shake_intensity = _value;
+	
+	obj_screenshake.shake_intensity = _value1;
+	obj_screenshake.duration = _value2;
+	
+	if _value2 == 0
+	_value2 = 5;
+	
+	if _value1 == 0
+	_value1 = 3;
 }
 
 function reload()

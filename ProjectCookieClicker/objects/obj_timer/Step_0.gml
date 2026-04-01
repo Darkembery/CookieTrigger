@@ -1,8 +1,9 @@
 #region cooldowns e detectores de tempo/o tempo atual.
+if global.pause exit
 if timer_cooldown > 0
 timer_cooldown--
 
-else if timer_cooldown == 0
+else if timer_cooldown == 0 and global.timer > 0
 {
 timer_cooldown = 68
 global.timer--
@@ -13,6 +14,9 @@ if global.timer <= 0
 {
 	if (instance_exists(obj_enemyall))
 	instance_destroy(obj_enemyall)
+	
+	if (instance_exists(obj_enemyspawner))
+	instance_destroy(obj_enemyspawner)
 	
 	if (instance_exists(obj_cookie))
 	instance_destroy(obj_cookie);
@@ -28,7 +32,7 @@ if global.timer <= 0
 	if (can_shake)
 	{
 		can_shake = false
-		screenshake(15)
+		screenshake(10)
 	}
 	
 	

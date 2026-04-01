@@ -1,0 +1,1 @@
+obj_cash.earn = 0

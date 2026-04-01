@@ -1,4 +1,5 @@
  #region Código base da arma. Trava no player, atira, e tem o cooldown. 
+ if global.pause exit
  if (instance_exists(obj_player))
 {
     // Posiciona a arma no player
@@ -27,7 +28,7 @@
 		and global.bullets > 0)
 		{
         var b = instance_create_depth(x, y, 5, obj_bullet);
-		screenshake(3)
+		screenshake(3, 5);
         b.speed = global.bullet_speed;
         b.direction = point_direction(x, y, mouse_x, mouse_y);
         b.image_angle = b.direction;

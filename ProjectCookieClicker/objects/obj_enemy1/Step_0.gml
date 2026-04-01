@@ -1,4 +1,5 @@
 #region segue player e morte.
+if global.pause exit
 if can_follow and instance_exists(obj_player)
 {
 	move_towards_point(obj_player.x, obj_player.y, move_speed)	
@@ -48,6 +49,9 @@ can_collide = false;
 alarm[1] = 60;
 knockback_x = sign(x - other.x)
 knockback_y = sign(y - other.y)
+var points = instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_timerlosepoints)
+points.value = damage_to_player
+screenshake(5)
 
 with obj_player
 {

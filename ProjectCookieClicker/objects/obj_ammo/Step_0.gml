@@ -1,4 +1,5 @@
 #region limitador de cookies
+if global.pause exit
 if global.cookies >= 3
 {
 	global.cookies = 3
@@ -16,6 +17,7 @@ else if global.cookies == 3 and global.cookies_existentes > 0
 	instance_destroy(obj_cookie)	
 }
 
+if instance_exists(obj_enemyspawner)
 show_debug_message("Tempo de Spawn: " + string(obj_enemyspawner.spawn_delay) +
 				  "| Cookies Existentes: " + string(global.cookies_existentes) + 
 				  " | Inimigos Spawnados: " + string(obj_enemyspawner.number_of_spawns))

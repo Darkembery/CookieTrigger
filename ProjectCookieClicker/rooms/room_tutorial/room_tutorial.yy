@@ -14,7 +14,7 @@
   "name":"room_tutorial",
   "parent":{
     "name":"tutorial",
-    "path":"folders/Objects/UX/Rooms/tutorial.yy",
+    "path":"folders/Rooms/tutorial.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

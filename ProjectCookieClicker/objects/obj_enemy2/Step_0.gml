@@ -1,16 +1,17 @@
 #region segue player e detecta se pode atirar
+if global.pause exit
 if (can_follow)
 {
-	move_towards_point(obj_player.x - 75, obj_player.y - 75, move_speed)	
+	move_towards_point(obj_player.x - 125, obj_player.y - 125, move_speed)	
 }
 
-if distance_to_object(obj_player) <= 75
+if distance_to_object(obj_player) <= 125
 {
 	move_speed = 0;	
 	can_aim = true;
 }
 
-else if distance_to_object(obj_player) > 75
+else if distance_to_object(obj_player) > 125
 {
 	move_speed = 1	
 	can_aim = false;
@@ -72,6 +73,7 @@ can_collide = false;
 alarm[1] = 60;
 knockback_x = sign(x - other.x)
 knockback_y = sign(y - other.y)
+screenshake(5)
 
 
 with obj_player

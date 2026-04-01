@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Interativos",
-    "path":"folders/Objects/Kitchen/Interativos.yy",
+    "path":"folders/Objects/HUD/Kitchen/Interativos.yy",
   },
   "parentObjectId":null,
   "persistent":false,
