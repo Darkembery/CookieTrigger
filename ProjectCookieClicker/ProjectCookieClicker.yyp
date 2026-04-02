@@ -87,6 +87,7 @@
     {"id":{"name":"obj_fade","path":"objects/obj_fade/obj_fade.yy",},},
     {"id":{"name":"obj_fadeout_white","path":"objects/obj_fadeout_white/obj_fadeout_white.yy",},},
     {"id":{"name":"obj_fadeout","path":"objects/obj_fadeout/obj_fadeout.yy",},},
+    {"id":{"name":"obj_fps","path":"objects/obj_fps/obj_fps.yy",},},
     {"id":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},},
     {"id":{"name":"obj_layer","path":"objects/obj_layer/obj_layer.yy",},},
     {"id":{"name":"obj_limitador","path":"objects/obj_limitador/obj_limitador.yy",},},
