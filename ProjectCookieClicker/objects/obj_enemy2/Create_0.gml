@@ -1,4 +1,4 @@
-move_speed = 1.2;
+move_speed = 1;
 flashing = false;
 hp = 75
 damage_to_player = 5

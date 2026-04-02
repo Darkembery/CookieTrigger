@@ -5,6 +5,7 @@ x = lerp(x, 384, 0.08)
 else
 {
 x = lerp(x, 672, 0.08)
+instance_destroy(obj_closeupgrade)
 instance_destroy(obj_upgradetext)
 instance_destroy(obj_buydamage)
 instance_destroy(obj_buycookies)

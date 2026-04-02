@@ -1,5 +1,6 @@
 global.highest_time_alive = 1 // precisa de save
 global.time_alive = 1; // save
+	
 
 //upgrade area
 global.timer = 0; 

@@ -72,6 +72,7 @@
     {"id":{"name":"obj_buydamage","path":"objects/obj_buydamage/obj_buydamage.yy",},},
     {"id":{"name":"obj_buytimer","path":"objects/obj_buytimer/obj_buytimer.yy",},},
     {"id":{"name":"obj_cash","path":"objects/obj_cash/obj_cash.yy",},},
+    {"id":{"name":"obj_closeupgrade","path":"objects/obj_closeupgrade/obj_closeupgrade.yy",},},
     {"id":{"name":"obj_cookie","path":"objects/obj_cookie/obj_cookie.yy",},},
     {"id":{"name":"obj_cookiehand","path":"objects/obj_cookiehand/obj_cookiehand.yy",},},
     {"id":{"name":"obj_cookieparticule","path":"objects/obj_cookieparticule/obj_cookieparticule.yy",},},

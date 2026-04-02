@@ -1,0 +1,1 @@
+obj_upgrade.can_go = false;

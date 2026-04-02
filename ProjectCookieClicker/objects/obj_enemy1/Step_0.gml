@@ -23,12 +23,16 @@ if (hp <= 0)
 if flashing
 {
 	image_blend = c_gray
+	can_collide = false
+	move_speed = 0
 	//sprite_index = spr_enemy1_1; // trocar por imagem branca	
 }
 
 else if !flashing
 {
 	image_blend = c_white
+	can_collide = true;
+	move_speed = 1.4
 }
 
 if (image_xscale != 1)

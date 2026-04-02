@@ -8,3 +8,4 @@ var button_2 = instance_create_layer(x + 64, y + 86 * 2.5, "Instances", obj_buyt
 var button_3 = instance_create_layer(x + 64 * 3, y + 86 , "Instances", obj_buycooldown)
 var button_4 = instance_create_layer(x + 64 * 2, y + 86 * 2.5 , "Instances", obj_buycookies)
 var button_text = instance_create_layer(512, 57, "Instances", obj_upgradetext)
+var close_button = instance_create_layer(0, 0, "Instances", obj_closeupgrade)

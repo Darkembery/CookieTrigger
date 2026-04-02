@@ -1,5 +1,5 @@
 can_spawn = false;
-spawn_delay = 105
+spawn_delay = 120;
 can_spawn_enemy2 = false;
 number_of_spawns = 0;
 
