@@ -51,7 +51,7 @@ global.enemy1_value = 5;
 global.enemy2_value = 10;
 
 //config player
-global.cash = 1000;
+global.cash = 0;
 global.can_act = true;
 global.pause = false;
 
