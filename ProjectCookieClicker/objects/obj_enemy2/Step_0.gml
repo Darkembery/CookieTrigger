@@ -2,13 +2,14 @@
 if global.pause exit
 if (can_follow)
 {
-	move_towards_point(obj_player.x - 125, obj_player.y - 125, move_speed)	
+	move_towards_point(obj_player.x + 125 , obj_player.y + 125, move_speed)	
 }
 
 if distance_to_object(obj_player) <= 125 and !flashing and obj_player.can_take_damage
 {
 	move_speed = 0;	
 	can_aim = true;
+	
 }
 
 else if distance_to_object(obj_player) > 125
