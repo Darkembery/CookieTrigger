@@ -20,26 +20,26 @@ global.bullet_speed = 12;
 global.reload_cooldown = 0
 
 //damage upgrade
-global.damage_upgrade_value = 20;
+global.damage_upgrade_value = 45;
 global.damage_upgrade_level = 1;
 global.damage_upgrade_max_level = 4;
 global.damage = 10; // save e upgrade
 
 //cooldown upgrade
-global.cooldown_upgrade_value = 25;
+global.cooldown_upgrade_value = 35;
 global.cooldown_upgrade_level = 1;
 global.cooldown_upgrade_max_level = 4;
 global.fire_cooldown_max = 25; // save e upgrade
 
 //munição por cookie upgrade
-global.ammopc_upgrade_value = 30;
+global.ammopc_upgrade_value = 40;
 global.ammopc_upgrade_level = 1;
 global.ammopc_upgrade_max_level = 4;
 global.bullets_per_cookie = 30 // save e upgrade
 global.bullets = global.bullets_per_cookie
 
 //tempo inicial
-global.timer_upgrade_value = 35;
+global.timer_upgrade_value = 50;
 global.timer_upgrade_level = 1;
 global.timer_upgrade_max_level = 4;
 global.timer_start_value = 25; // save e upgrade
@@ -51,7 +51,7 @@ global.enemy1_value = 5;
 global.enemy2_value = 10;
 
 //config player
-global.cash = 0;
+global.cash = 1000;
 global.can_act = true;
 global.pause = false;
 

@@ -8,8 +8,6 @@ alarm[1] = 1200
 
 function spawn()
 {
-	if (!instance_number(obj_enemy2)) < 15 or (!instance_number(obj_enemy1)) < 15
-	{
 	randomize();
 	var x_location = choose(-32, -64, 680, 660, 700)
 	var y_location = choose(-32, - 64, 390, 400, 420)
@@ -38,7 +36,6 @@ function spawn()
 			}
 		}
 	}
-}
 
 function spawn_debug()
 {

@@ -1,6 +1,6 @@
-value = global.damage_upgrade_value
-level = global.damage_upgrade_level
-max_level = global.damage_upgrade_max_level
+value = global.timer_upgrade_value
+level = global.timer_upgrade_level
+max_level = global.timer_upgrade_max_level
 can_reduce = true;
 can_buy = true;
 got_money = false;

@@ -1,6 +1,10 @@
 x = obj_upgrade.x + 64 * 3
 y = obj_upgrade.y + 86 * 2
 
+value = global.timer_upgrade_value
+level = global.timer_upgrade_level
+max_level = global.timer_upgrade_max_level
+
 if global.cash >= global.timer_upgrade_value
 {
 	got_money = true;	

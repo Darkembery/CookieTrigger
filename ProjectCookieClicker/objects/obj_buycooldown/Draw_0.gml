@@ -16,7 +16,7 @@ draw_set_font(font_hudBoldSmall_1)
 if (global.cooldown_upgrade_level == global.cooldown_upgrade_max_level)
 draw_text(x, y + 68, "Max Level")
 else
-draw_text(x, y + 68, "Price: " + string(global.cooldown_upgrade_value))
+draw_text(x, y + 68, "Price: " + string(value))
 
 draw_set_colour(c_white)
 draw_set_valign(-1)
