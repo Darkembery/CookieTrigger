@@ -1,6 +1,6 @@
 if (state == 0) 
 {
-	timer += 0.1;
+	timer += 0.4;
 	
 	if (timer >= duration)
 	{
@@ -18,12 +18,6 @@ else
 		
 		if timer <= 0
 		{
-			if room == room_game or targetroom == room_game and can_run
-			{
-			alarm[0] = 10;
-			can_run = false;
-			}
-			else
 			instance_destroy();
 		}	
 	}

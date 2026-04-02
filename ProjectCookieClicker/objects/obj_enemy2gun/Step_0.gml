@@ -32,7 +32,7 @@ if (can_aim)
 {
 if can_shoot
 {
-	shoot_cooldown = 40;
+	shoot_cooldown = 75;
 
 //segue monstro
 var dist = 12; 

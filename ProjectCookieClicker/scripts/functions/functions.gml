@@ -35,6 +35,22 @@ var _targetroom = argument0;
 var _duration = argument1;
 var _color = argument2;
 
+var _instance = instance_create_layer(0,0, "Instances",obj_slowfade)
+
+with (_instance)
+{
+	targetroom = _targetroom;
+	duration = _duration;
+	color = _color;	
+	}
+}
+
+function fastfade()
+{
+var _targetroom = argument0;
+var _duration = argument1;
+var _color = argument2;
+
 var _instance = instance_create_layer(0,0, "Instances",obj_fade)
 
 with (_instance)
@@ -44,3 +60,49 @@ with (_instance)
 	color = _color;	
 	}
 }
+
+function scr_save_all()
+{
+	if (file_exists("save.init")) file_delete("save.init")
+	
+	ini_open("save.init");
+//lembrando real pra float, int, bool etc
+//string pra textos. mas acho q quase nunca vai ser usado.
+
+//cooldown
+ini_write_real("cooldown_upgrade", "cooldown_upgrade_level", global.cooldown_upgrade_level)
+ini_write_real("cooldown_upgrade", "cooldown_upgrade_max_level", global.cooldown_upgrade_max_level)
+ini_write_real("cooldown_upgrade", "cooldown_upgrade_value", global.cooldown_upgrade_value)
+ini_write_real("cooldown_upgrade", "cooldown", global.fire_cooldown_max)
+
+//tempo
+ini_write_real("timer_upgrade", "timer_upgrade_level", global.timer_upgrade_level)
+ini_write_real("timer_upgrade", "timer_upgrade_max_level", global.timer_upgrade_max_level)
+ini_write_real("timer_upgrade", "timer_upgrade_value", global.timer_upgrade_value)
+ini_write_real("timer_upgrade", "timer", global.timer_upgrade_level)
+
+//munição
+ini_write_real("ammo_upgrade", "ammo_upgrade_level", global.ammopc_upgrade_level)
+ini_write_real("ammo_upgrade", "ammo_upgrade_max_level", global.ammopc_upgrade_max_level)
+ini_write_real("ammo_upgrade", "ammo_upgrade_value", global.ammopc_upgrade_value)
+ini_write_real("ammo_upgrade", "ammo_cookies", global.bullets_per_cookie)
+
+//dano
+ini_write_real("damage_upgrade", "damage_upgrade_level", global.damage_upgrade_level)
+ini_write_real("damage_upgrade", "damage_upgrade_max_level", global.damage_upgrade_max_level)
+ini_write_real("damage_upgrade", "damage_upgrade_value", global.damage_upgrade_value)
+ini_write_real("damage_upgrade", "damage_damage", global.damage)
+
+	ini_close();
+
+}
+
+function scr_load_all()
+{
+	
+	if file_exists("save.init")
+	{
+	
+	}
+}
+

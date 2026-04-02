@@ -1,0 +1,9 @@
+value = global.cooldown_upgrade_value
+level = global.cooldown_upgrade_level
+max_level = global.cooldown_upgrade_max_level
+can_reduce = true;
+can_buy = true;
+got_money = false;
+_x = 0
+_y = 0
+selected = false;

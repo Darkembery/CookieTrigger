@@ -2,13 +2,13 @@ if global.pause exit
 if (place_meeting(x, y, obj_player))
 {
 	can_show = true;
-	alpha = lerp(alpha, 1, 0.06)
+	alpha = lerp(alpha, 1, 0.1)
 }
 
 else
 {
 	can_show = false;	
-	alpha = lerp(alpha, 0, 0.1)
+	alpha = lerp(alpha, 0, 0.08)
 }
 
 if keyboard_check_pressed(ord("E")) and can_show
@@ -35,3 +35,6 @@ if keyboard_check_pressed(vk_backspace) or keyboard_check_pressed(vk_escape)
 	instance_destroy(obj_nothing)
 	
 }
+
+if (instance_exists(obj_cookiehand))
+instance_destroy(obj_cookiehand)

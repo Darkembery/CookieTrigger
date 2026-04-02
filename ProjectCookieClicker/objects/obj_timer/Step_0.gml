@@ -12,6 +12,8 @@ global.time_alive++
 
 if global.timer <= 0
 {
+	scr_save_all(); 
+	
 	if (instance_exists(obj_enemyall))
 	instance_destroy(obj_enemyall)
 	
@@ -34,6 +36,8 @@ if global.timer <= 0
 		can_shake = false
 		screenshake(10, 15)
 	}
+	
+	global.timer = 0
 	
 	
 }

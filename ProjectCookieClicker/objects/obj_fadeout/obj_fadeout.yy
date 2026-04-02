@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"UX",
-    "path":"folders/Objects/UX.yy",
+    "path":"folders/Objects/UI/UX.yy",
   },
   "parentObjectId":null,
   "persistent":false,
