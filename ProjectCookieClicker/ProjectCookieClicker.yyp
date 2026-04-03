@@ -102,6 +102,7 @@
     {"id":{"name":"obj_layer","path":"objects/obj_layer/obj_layer.yy",},},
     {"id":{"name":"obj_limitador","path":"objects/obj_limitador/obj_limitador.yy",},},
     {"id":{"name":"obj_machine","path":"objects/obj_machine/obj_machine.yy",},},
+    {"id":{"name":"obj_menufps","path":"objects/obj_menufps/obj_menufps.yy",},},
     {"id":{"name":"obj_menuscreenshake","path":"objects/obj_menuscreenshake/obj_menuscreenshake.yy",},},
     {"id":{"name":"obj_nothing","path":"objects/obj_nothing/obj_nothing.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},

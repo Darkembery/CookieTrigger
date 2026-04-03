@@ -1,6 +1,7 @@
 global.highest_time_alive = 1 // precisa de save
 global.time_alive = 1; // save
 global.volume = 1; // save
+global.fps = true; //save
 
 //tutorial
 global.can_start_tutorial = true;

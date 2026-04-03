@@ -1,0 +1,1 @@
+fade(room_kitchen, 15, c_black)

@@ -102,6 +102,7 @@ function scr_save_all()
 	//Options
 	ini_write_real("Options", "ScreenShake", global.screen_shake_active);
 	ini_write_real("Options", "Volume", global.volume);
+	ini_write_real("Options", "FPS", global.fps);
 	
     ini_close();
 }
@@ -146,6 +147,7 @@ function scr_load_all()
 		//options
 		global.screen_shake_active		  = ini_read_real("Options", "ScreenShake", true)
 		global.volume					  = ini_read_real("Options", "Volume", 1)
+		global.fps						  = ini_read_real("Options", "FPS", true);
         
         ini_close();
     }
