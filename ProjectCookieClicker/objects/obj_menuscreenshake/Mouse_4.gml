@@ -1,0 +1,1 @@
+global.screen_shake_active = !global.screen_shake_active

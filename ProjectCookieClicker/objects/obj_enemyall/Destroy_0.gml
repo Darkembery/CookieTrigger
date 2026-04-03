@@ -7,7 +7,7 @@ var cookie = cookie_chance
 else if obj_enemyspawner.number_of_spawns > 100
 cookie = cookie_chance_long
 
-if (cookie >= 3)
+if (cookie >= 2)
 and global.cookies <= 3 
 and global.cookies_existentes <= 2
 and global.can_collect_cookies

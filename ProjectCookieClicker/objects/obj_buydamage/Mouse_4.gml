@@ -1,5 +1,6 @@
 if (global.cash >= value) and can_buy
 {
+	scr_save_all()
 	global.cash -= value
 	global.damage_upgrade_level++
 	if global.damage_upgrade_level <= 6
@@ -8,6 +9,7 @@ if (global.cash >= value) and can_buy
 	global.damage_upgrade_value *= 1.5
 	value = global.damage_upgrade_value
 	global.damage += 1
+	scr_save_all()
 	if (!instance_exists(obj_fadeout_white))
 {
 var fad = instance_create_layer(0,0,"Instances", obj_fadeout_white)

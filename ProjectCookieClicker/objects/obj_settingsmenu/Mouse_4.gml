@@ -1,0 +1,1 @@
+fastfade(room_settings, 10, c_black)

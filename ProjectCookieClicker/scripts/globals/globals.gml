@@ -1,14 +1,15 @@
 global.highest_time_alive = 1 // precisa de save
 global.time_alive = 1; // save
-	
+global.volume = 1; // save
+
+//tutorial
+global.can_start_tutorial = true;
 
 //upgrade area
-global.timer = 0; 
-
+global.timer = 25; 
 
 //config arma
 global.fire_cooldown = 0;
-
 
 //config munição
 global.cookies = 0
@@ -43,6 +44,7 @@ global.timer_upgrade_value = 50;
 global.timer_upgrade_level = 1;
 global.timer_upgrade_max_level = 10;
 global.timer_start_value = 25; // save e upgrade
+global.timer = 0; 
 
 //config inimigos
 global.enemy1_kills = 0

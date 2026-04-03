@@ -62,7 +62,7 @@ with obj_player
 {
 alarm[1] = 90
 can_take_damage = false;
-	}
-}	
+		}
+	}	
 }
 #endregion

@@ -1,0 +1,11 @@
+draw_set_font(font_hudBoldBig)
+draw_set_valign(fa_middle)
+draw_set_halign(fa_center)
+draw_set_alpha(1)
+
+draw_text(view_wport / 2, view_hport / 2, "Check Itch.io Page!")
+draw_set_alpha(0.05)
+draw_text(view_wport / 2, view_hport / 2 + 256, "I ain't putting scribble in ts")
+draw_set_alpha(1)
+draw_set_valign(-1)
+draw_set_halign(-1)

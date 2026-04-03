@@ -51,7 +51,7 @@ draw_set_colour(c_yellow)
 draw_set_colour(c_white)
     draw_text(view_wport / 2 - 300, view_hport - 380, "Reduces the\nshot cooldown.");
 	if global.cooldown_upgrade_level < 10
-	draw_text(view_wport / 2 - 300, view_hport - 256, string(global.fire_cooldown_max) + " -> " + string(global.fire_cooldown_max - 1.2))
+	draw_text(view_wport / 2 - 300, view_hport - 256, string(global.fire_cooldown_max) + " -> " + string(global.fire_cooldown_max - 1.8))
 	else
 	{
 	draw_set_colour(c_yellow)

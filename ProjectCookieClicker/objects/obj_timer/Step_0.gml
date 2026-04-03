@@ -38,8 +38,6 @@ if global.timer <= 0
 	}
 	
 	global.timer = 0
-	
-	
 }
 
 if global.timer > 0

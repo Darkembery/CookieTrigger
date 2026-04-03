@@ -1,0 +1,1 @@
+fastfade(room_credits, 10, c_black);
