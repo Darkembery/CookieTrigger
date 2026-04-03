@@ -10,7 +10,7 @@ points.value = obj_enemy2.damage_to_player
 with other
 {
 //não pode tomar dano.
-alarm[1] = 90
+alarm[1] = 60
 can_take_damage = false;
 	}
 }

@@ -1,11 +1,15 @@
 var cookie_chance = irandom_range(1, 10)
-var cookie_chance_long = choose(1, 2)
+var cookie_chance_long = choose(1, 1, 2)
+var cookie_chance_longasf = choose(1, 2)
 
-if obj_enemyspawner.number_of_spawns <= 100
+if obj_enemyspawner.number_of_spawns <= 150
 var cookie = cookie_chance
 
-else if obj_enemyspawner.number_of_spawns > 100
+else if obj_enemyspawner.number_of_spawns > 150
 cookie = cookie_chance_long
+
+else if obj_enemyspawner.number_of_spawns > 300
+cookie = cookie_chance_longasf
 
 if (cookie >= 2)
 and global.cookies <= 3 

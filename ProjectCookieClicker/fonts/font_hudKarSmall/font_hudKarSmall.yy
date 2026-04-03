@@ -120,7 +120,7 @@
   "name":"font_hudKarSmall",
   "parent":{
     "name":"Fonts",
-    "path":"folders/Fonts.yy",
+    "path":"folders/Objects/Enemys/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[

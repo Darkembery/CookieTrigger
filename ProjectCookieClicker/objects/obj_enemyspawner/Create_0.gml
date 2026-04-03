@@ -12,6 +12,8 @@ function spawn()
 	var x_location = choose(-32, -64, 680, 660, 700)
 	var y_location = choose(-32, - 64, 390, 400, 420)
 	
+	if instance_number(obj_enemyall) < 15
+	{
 	if (!can_spawn_enemy2)
 	{
 	instance_create_layer(x_location, y_location, "Enemys", obj_enemy1)
@@ -33,6 +35,7 @@ function spawn()
 	{
 		instance_create_layer(x_location, y_location, "Enemys", obj_enemy2)
 		show_debug_message("Inimigo 2 Spawnado.")
+				}
 			}
 		}
 	}

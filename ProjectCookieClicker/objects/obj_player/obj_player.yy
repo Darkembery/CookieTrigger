@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Player",
-    "path":"folders/Objects/Player.yy",
+    "path":"folders/Objects/HUD/Player.yy",
   },
   "parentObjectId":null,
   "persistent":false,

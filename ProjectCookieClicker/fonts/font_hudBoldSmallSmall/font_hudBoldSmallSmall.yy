@@ -215,7 +215,7 @@
   "name":"font_hudBoldSmallSmall",
   "parent":{
     "name":"Fonts",
-    "path":"folders/Fonts.yy",
+    "path":"folders/Objects/Enemys/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[

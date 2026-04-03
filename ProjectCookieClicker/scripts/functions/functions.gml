@@ -66,7 +66,8 @@ with (_instance)
 
 function scr_save_all()
 {
-    ini_open("save.init");
+	if (file_exists("save.initi")) file_delete("save.initi")
+    ini_open("save.initi");
 
     // Cooldown
     ini_write_real("cooldown_upgrade", "level", global.cooldown_upgrade_level);
@@ -109,9 +110,7 @@ function scr_save_all()
 
 function scr_load_all()
 {
-    if (file_exists("save.init"))
-    {
-        ini_open("save.init");
+        ini_open("save.initi");
         
         // Cooldown
         global.cooldown_upgrade_level     = ini_read_real("cooldown_upgrade", "level", 1);
@@ -150,12 +149,6 @@ function scr_load_all()
 		global.fps						  = ini_read_real("Options", "FPS", true);
         
         ini_close();
-    }
-    else
-    {
-
-        scr_save_all(); 
-    }
 }
 
 function format_number(_value)

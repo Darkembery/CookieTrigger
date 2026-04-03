@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"gun",
-    "path":"folders/Objects/Player/gun.yy",
+    "path":"folders/Objects/HUD/Player/gun.yy",
   },
   "parentObjectId":null,
   "persistent":false,

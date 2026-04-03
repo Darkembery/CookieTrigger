@@ -1,15 +1,33 @@
 #region segue player e morte.
 
+depth = -y;
+
 if can_follow and instance_exists(obj_player) and !global.pause
 {
-	move_towards_point(obj_player.x, obj_player.y, move_speed)	
+var _spd = move_speed; 
+var _separation_speed = 0.5; 
+var _dir = point_direction(x, y, obj_player.x, obj_player.y);
+
+var _hspd = lengthdir_x(_spd, _dir);
+var _vspd = lengthdir_y(_spd, _dir);
+
+var _other = instance_place(x, y, obj_enemyall);
+
+if (_other != noone) {
+    var _push_dir = point_direction(_other.x, _other.y, x, y);
+    
+    _hspd += lengthdir_x(_separation_speed, _push_dir);
+    _vspd += lengthdir_y(_separation_speed, _push_dir);
+}
+
+x += _hspd;
+y += _vspd;
 }
 
 else
 {
 	move_speed = 0;	
 }
-
 
 if (hp <= 0)
 {
@@ -51,7 +69,7 @@ if place_meeting(x, y, obj_player)
 global.timer -= damage_to_player
 can_follow = false;
 can_collide = false;
-alarm[1] = 60;
+alarm[1] = 30;
 knockback_x = sign(x - other.x)
 knockback_y = sign(y - other.y)
 var points = instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_timerlosepoints)
@@ -60,7 +78,7 @@ screenshake(5, 5)
 
 with obj_player
 {
-alarm[1] = 90
+alarm[1] = 60
 can_take_damage = false;
 		}
 	}	
