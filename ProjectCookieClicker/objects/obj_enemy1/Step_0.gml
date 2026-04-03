@@ -1,6 +1,6 @@
 #region segue player e morte.
-if global.pause exit
-if can_follow and instance_exists(obj_player)
+
+if can_follow and instance_exists(obj_player) and !global.pause
 {
 	move_towards_point(obj_player.x, obj_player.y, move_speed)	
 }
@@ -9,6 +9,7 @@ else
 {
 	move_speed = 0;	
 }
+
 
 if (hp <= 0)
 {

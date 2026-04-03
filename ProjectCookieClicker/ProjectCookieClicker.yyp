@@ -93,7 +93,6 @@
     {"id":{"name":"obj_limitador","path":"objects/obj_limitador/obj_limitador.yy",},},
     {"id":{"name":"obj_machine","path":"objects/obj_machine/obj_machine.yy",},},
     {"id":{"name":"obj_nothing","path":"objects/obj_nothing/obj_nothing.yy",},},
-    {"id":{"name":"obj_pause","path":"objects/obj_pause/obj_pause.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_screenshake","path":"objects/obj_screenshake/obj_screenshake.yy",},},
     {"id":{"name":"obj_sell","path":"objects/obj_sell/obj_sell.yy",},},

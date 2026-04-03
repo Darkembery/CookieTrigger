@@ -2,7 +2,8 @@ with other
 {
 	hp = hp - global.damage	
 	flashing = true;
-	alarm[0] = 20;
+	var alarm0 = random_range(7.5, 15)
+	alarm[0] = alarm0;
 	image_xscale = 0.7
 	image_yscale = 0.9
 	var damage = instance_create_layer(other.x, other.y, 

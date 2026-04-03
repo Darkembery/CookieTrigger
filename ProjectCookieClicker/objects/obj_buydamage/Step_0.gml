@@ -18,7 +18,7 @@ else
 if global.damage_upgrade_level >= global.damage_upgrade_max_level
 {
 	can_buy = false;
-	global.damage_upgrade_level = 4
+	global.damage_upgrade_level = 10
 }
 
 if can_reduce

@@ -1,4 +1,5 @@
 //reduz o tempo de acordo com o dano, reseta velocidade, não pode seguir, dá knockback e reinicia.
+if global.pause exit
 if (other.can_take_damage)
 {
 global.timer -= obj_enemy2.damage_to_player 

@@ -16,7 +16,7 @@ draw_set_font(font_hudBoldSmall_1)
 if (global.ammopc_upgrade_level == global.ammopc_upgrade_max_level)
 draw_text(x, y + 68, "Max Level")
 else
-draw_text(x, y + 68, "Price: " + string(value))
+draw_text(x, y + 68, "Price: " + format_number(value))
 
 draw_set_colour(c_white)
 draw_set_valign(-1)

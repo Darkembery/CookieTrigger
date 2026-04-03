@@ -2,10 +2,12 @@ if (global.cash >= value) and can_buy
 {
 	global.cash -= value
 	global.ammopc_upgrade_level++
-	global.ammopc_upgrade_value *= 4.3
+	if global.ammopc_upgrade_level <= 6
+	global.ammopc_upgrade_value *= 2.5
+	else
+	global.ammopc_upgrade_value *= 1.2
 	value = global.ammopc_upgrade_value
-	global.bullets_per_cookie += 10
-	
+	global.bullets_per_cookie += 5	
 	if (!instance_exists(obj_fadeout_white))
 {
 var fad = instance_create_layer(0,0,"Instances", obj_fadeout_white)

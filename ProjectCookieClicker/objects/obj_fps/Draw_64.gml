@@ -7,7 +7,10 @@ draw_set_valign(fa_top);
 draw_set_font(font_hudBold)
 draw_set_alpha(0.5)
 
-draw_text_transformed_colour(20, 80, "FPS: " + string(fps), 1.5, 1.5, 0, _color, _color, _color, _color, 1);
+if (room == room_kitchen)
+draw_text_transformed_colour(20, 80, "FPS: " + string(fps), 1, 1, 0, _color, _color, _color, _color, 1);
+else
+draw_text_transformed_colour(20, 20, "FPS: " + string(fps), 1, 1, 0, _color, _color, _color, _color, 1);
 
 draw_set_colour(c_white);
 

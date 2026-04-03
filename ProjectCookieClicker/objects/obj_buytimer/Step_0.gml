@@ -22,7 +22,7 @@ else
 if global.timer_upgrade_level >= global.timer_upgrade_max_level
 {
 	can_buy = false;
-	global.timer_upgrade_level = 4
+	global.timer_upgrade_level = 10
 }
 
 if can_reduce

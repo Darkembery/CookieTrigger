@@ -2,6 +2,9 @@ function start_game()
 {
 	global.timer = global.timer_start_value;
 	global.bullets = global.bullets_per_cookie;
+	if global.cookies > 0
+	global.cookies = 0;
+	global.can_collect_cookies = true;
 }
 
 function screenshake(_value1, _value2)
@@ -104,5 +107,22 @@ function scr_load_all()
 	{
 	
 	}
+}
+
+function format_number(_value)
+{
+    var suffixes = ["", "K", "M", "B", "T", 
+					"Qa", "Qi", "Se", "Sp", 
+					"Oc", "No", "De", "Infinity"];
+    var v = _value;
+    var index = 0;
+
+    while (v >= 1000 && index < array_length(suffixes) - 1)
+    {
+        v /= 1000;
+        index++;
+    }
+
+    return string_format(v, 0, 1) + suffixes[index];
 }
 

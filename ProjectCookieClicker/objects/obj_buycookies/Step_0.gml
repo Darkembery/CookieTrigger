@@ -17,7 +17,7 @@ else
 if global.ammopc_upgrade_level >= global.ammopc_upgrade_max_level
 {
 	can_buy = false;
-	global.ammopc_upgrade_level = 4
+	global.ammopc_upgrade_level = 10
 }
 
 if can_reduce

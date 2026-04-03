@@ -2,9 +2,12 @@ if (global.cash >= value) and can_buy
 {
 	global.cash -= value
 	global.damage_upgrade_level++
-	global.damage_upgrade_value *= 4.5
+	if global.damage_upgrade_level <= 6
+	global.damage_upgrade_value *= 2.35
+	else
+	global.damage_upgrade_value *= 1.5
 	value = global.damage_upgrade_value
-	global.damage += 5
+	global.damage += 1
 	if (!instance_exists(obj_fadeout_white))
 {
 var fad = instance_create_layer(0,0,"Instances", obj_fadeout_white)

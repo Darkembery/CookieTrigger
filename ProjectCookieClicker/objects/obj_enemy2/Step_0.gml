@@ -1,9 +1,11 @@
 #region segue player e detecta se pode atirar
-if global.pause exit
-if (can_follow)
+if (can_follow) and !global.pause
 {
 	move_towards_point(obj_player.x + 125 , obj_player.y + 125, move_speed)	
 }
+
+if global.pause
+move_speed = 0
 
 if distance_to_object(obj_player) <= 125 and !flashing and obj_player.can_take_damage
 {
@@ -18,7 +20,7 @@ else if distance_to_object(obj_player) > 125
 	can_aim = false;
 }
 #endregion
-
+if global.pause exit
 #region tiro
 if (can_aim)
 {
