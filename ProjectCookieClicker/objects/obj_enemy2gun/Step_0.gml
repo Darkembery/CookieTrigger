@@ -28,11 +28,23 @@ var diff = angle_difference(dir_target, image_angle);
 image_angle += diff * 0.05;    
 last_angle = image_angle;
 
+if (obj_player > x) 
+{
+    image_yscale = 1;
+} 
+
+else
+{
+    image_yscale = -1;
+}
+
 if (can_aim)
 {
 if can_shoot
 {
-	shoot_cooldown = 75;
+	shoot_cooldown = irandom_range(60, 75)
+	if (!audio_is_playing(sfx_enemygun))
+	audio_play_sound(sfx_enemygun, 1, 0, global.volume - 0.15)
 
 //segue monstro
 var dist = 12; 

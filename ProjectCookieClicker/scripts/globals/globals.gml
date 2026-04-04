@@ -50,8 +50,8 @@ global.timer = 0;
 //config inimigos
 global.enemy1_kills = 0
 global.enemy2_kills = 0;
-global.enemy1_value = 50;
-global.enemy2_value = 100;
+global.enemy1_value = 40;
+global.enemy2_value = 75;
 
 //config player
 global.cash = 0;
@@ -61,6 +61,7 @@ global.pause = false;
 
 //config game
 global.debug = false;
+global.exit_trys = 0
 
 
 

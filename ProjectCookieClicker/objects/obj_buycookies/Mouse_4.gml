@@ -9,6 +9,7 @@ if (global.cash >= value) and can_buy
 	global.ammopc_upgrade_value *= 1.2
 	value = global.ammopc_upgrade_value
 	global.bullets_per_cookie += 5	
+	audio_play_sound(sfx_confirm, 1, 0, global.volume);	
 	scr_save_all()
 	if (!instance_exists(obj_fadeout_white))
 {
@@ -19,5 +20,5 @@ fad.image_blend = c_green
 
 else
 {
-	//audio_play_sound(sfx_purchaseerror, 1, 0);	
+	audio_play_sound(sfx_purchaseerror, 1, 0, global.volume);	
 }

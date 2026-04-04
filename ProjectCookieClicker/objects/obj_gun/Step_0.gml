@@ -2,16 +2,24 @@
  if global.pause exit
  if (instance_exists(obj_player))
 {
-    // Posiciona a arma no player
     x = obj_player.x + 18;
     y = obj_player.y + 14;
 
-    // Giro instantâneo pro mouse
-    image_angle = point_direction(x, y, mouse_x, mouse_y);
+var _angle = point_direction(x, y, mouse_x, mouse_y);
 
-    // Mantém sprite da arma normal
-    image_xscale = 1;
+
+image_angle = _angle;
+
+
+if (mouse_x > x) 
+{
     image_yscale = 1;
+} 
+
+else
+{
+    image_yscale = -1;
+}
 	
 	//reload
 	if (keyboard_check_pressed(ord("R")))
@@ -29,6 +37,12 @@
 		{
         var b = instance_create_depth(x, y, 5, obj_bullet);
 		screenshake(3, 5);
+		if can_play
+		{
+		audio_play_sound(sfx_playergun, 1, 0, global.volume)
+		can_play = false;
+		alarm[0] = 8
+		}
         b.speed = global.bullet_speed;
         b.direction = point_direction(x, y, mouse_x, mouse_y);
         b.image_angle = b.direction;

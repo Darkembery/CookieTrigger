@@ -4,6 +4,16 @@ depth = -y;
 
 if can_follow and instance_exists(obj_player) and !global.pause
 {
+if (obj_player > x) 
+{
+    
+}
+
+else
+{
+	
+}
+
 var _spd = move_speed; 
 var _separation_speed = 0.5; 
 var _dir = point_direction(x, y, obj_player.x, obj_player.y);
@@ -67,6 +77,7 @@ if place_meeting(x, y, obj_player)
 	if (can_collide) and obj_player.can_take_damage
 {
 global.timer -= damage_to_player
+audio_play_sound(sfx_playerhit, 1, 0, global.volume)
 can_follow = false;
 can_collide = false;
 alarm[1] = 30;

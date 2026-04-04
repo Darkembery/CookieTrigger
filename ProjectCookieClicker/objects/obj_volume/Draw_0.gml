@@ -7,7 +7,7 @@ draw_set_colour(c_yellow)
 else
 draw_set_colour(c_white)
 
-draw_text(x, y, "Sound Volume : " + format_number(global.volume))
+draw_text(x, y, "Sound Volume: " + string(global.volume * 100) + "%")
 
 draw_set_valign(-1)
 draw_set_halign(-1)

@@ -1,6 +1,7 @@
 with other
 {
 	hp = hp - global.damage	
+	audio_play_sound(sfx_enemyhit, 1, 0, global.volume)
 	flashing = true;
 	var alarm0 = random_range(7.5, 15)
 	alarm[0] = alarm0;

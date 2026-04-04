@@ -9,6 +9,7 @@ if (global.cash >= value) and can_buy
 	global.damage_upgrade_value *= 1.5
 	value = global.damage_upgrade_value
 	global.damage += 1
+	audio_play_sound(sfx_confirm, 1, 0, global.volume);	
 	scr_save_all()
 	if (!instance_exists(obj_fadeout_white))
 {
@@ -19,5 +20,5 @@ fad.image_blend = c_green
 
 else
 {
-	//audio_play_sound(sfx_purchaseerror, 1, 0);	
+	audio_play_sound(sfx_purchaseerror, 1, 0, global.volume);	
 }

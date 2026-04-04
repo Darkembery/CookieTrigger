@@ -111,7 +111,7 @@
   "name":"font_yoaster",
   "parent":{
     "name":"Fonts",
-    "path":"folders/Objects/Enemys/Fonts.yy",
+    "path":"folders/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[

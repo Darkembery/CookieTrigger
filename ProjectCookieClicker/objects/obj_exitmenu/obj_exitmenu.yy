@@ -15,8 +15,8 @@
   "name":"obj_exitmenu",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menus",
-    "path":"folders/Objects/UI/Menus.yy",
+    "name":"exit",
+    "path":"folders/Objects/UI/Menus/exit.yy",
   },
   "parentObjectId":null,
   "persistent":false,

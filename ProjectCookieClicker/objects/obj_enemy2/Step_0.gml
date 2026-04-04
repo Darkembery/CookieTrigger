@@ -3,6 +3,16 @@ depth = -y;
 
 if can_follow and instance_exists(obj_player) and !global.pause
 {
+if (obj_player > x) 
+{
+
+} 
+
+else
+{
+
+}
+
 var _spd = move_speed; 
 var _separation_speed = 0.5; 
 var _dir = point_direction(x, y, obj_player.x, obj_player.y);
@@ -91,6 +101,7 @@ image_xscale = lerp(image_xscale, 1, 0.1)
 
 if (image_yscale != 1)
 image_yscale = lerp(image_yscale, 1, 0.1)
+
 #endregion
 
 #region colissão com o player = dano.
@@ -98,6 +109,7 @@ if place_meeting(x, y, obj_player)
 {
 	if (can_collide) and obj_player.can_take_damage
 {
+audio_play_sound(sfx_playerhit, 1, 0, global.volume)
 global.timer -= damage_to_player
 can_follow = false;
 can_collide = false;

@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"cookie",
-    "path":"folders/Objects/HUD/Player/cookie.yy",
+    "path":"folders/Objects/Player/cookie.yy",
   },
   "parentObjectId":null,
   "persistent":false,

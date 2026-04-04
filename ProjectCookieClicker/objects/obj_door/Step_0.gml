@@ -8,11 +8,13 @@ if keyboard_check_pressed(ord("E"))
 {
 if room == room_game
 {
+	//audio_stop_sound(noone)
 	fade(room_kitchen, 15, c_black)
 }
 
 else if room == room_kitchen
 {
+	audio_stop_sound(msc_kitchen)
 	fade(room_game, 15, c_black)	
 		}
 	}

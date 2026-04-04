@@ -21,5 +21,5 @@ can_collide_self = true;
 knockback_x = 0
 knockback_y = 0;
 
-image_xscale = 0
-image_yscale = 0
+image_xscale = 1
+image_yscale = 1

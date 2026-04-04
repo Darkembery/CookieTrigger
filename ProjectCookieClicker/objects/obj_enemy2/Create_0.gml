@@ -25,6 +25,6 @@ can_aim = false;
 gun = instance_create_layer(x, y, "Enemys", obj_enemy2gun)
 gun.owner = id;
 
-image_xscale = 0
-image_yscale = 0
+image_xscale = 1
+image_yscale = 1
 

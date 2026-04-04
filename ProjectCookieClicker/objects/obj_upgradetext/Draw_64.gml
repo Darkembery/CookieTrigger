@@ -35,7 +35,7 @@ draw_set_colour(c_white)
     draw_text(view_wport / 2 - 300, view_hport - 380, "Increases the\nhunting time.");
 	
 	if global.timer_upgrade_level < 10
-	draw_text(view_wport / 2 - 300, view_hport - 256, string(global.timer_start_value) + " -> " + string(global.timer_start_value + 5)) 
+	draw_text(view_wport / 2 - 300, view_hport - 256, string(global.timer_start_value) + " -> " + string(global.timer_start_value + 4)) 
 	else
 	{
 	draw_set_colour(c_yellow)

@@ -29,6 +29,7 @@ function reload()
 	{
 	global.bullets = global.bullets_per_cookie
 	global.cookies--	
+	audio_play_sound(sfx_reload, 1, 0, global.volume)
 	}
 }
 

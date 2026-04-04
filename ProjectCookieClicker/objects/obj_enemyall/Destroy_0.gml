@@ -1,3 +1,5 @@
+if (!audio_is_playing(sfx_enemydeath))
+audio_play_sound(sfx_enemydeath, 1, 0, global.volume)
 var cookie_chance = irandom_range(1, 10)
 var cookie_chance_long = choose(1, 1, 2)
 var cookie_chance_longasf = choose(1, 2)

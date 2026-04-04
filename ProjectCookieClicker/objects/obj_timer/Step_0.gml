@@ -13,7 +13,10 @@ global.time_alive++
 if global.timer <= 0
 {
 	scr_save_all(); 
-	
+	audio_stop_sound(msc_game)
+	if can_play
+	audio_play_sound(sfx_gameend, 1, 0, global.volume)
+	can_play = false;
 	if (instance_exists(obj_enemyall))
 	instance_destroy(obj_enemyall)
 	

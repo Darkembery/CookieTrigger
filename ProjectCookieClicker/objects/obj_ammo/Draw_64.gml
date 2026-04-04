@@ -25,7 +25,14 @@ else if (global.reload_cooldown > 0)
 	draw_text(20, 620, "Reloading. . .")
 }
 
+if global.cookies > 1
 draw_set_colour(c_white)
+else if global.cookies == 1
+draw_set_colour(c_yellow)
+else if global.cookies == 0
+draw_set_colour(c_red)
+
 draw_text(20, 660, "Cookies: " + string(global.cookies) + " / " + string(3))
 
+draw_set_colour(c_white)
 #endregion

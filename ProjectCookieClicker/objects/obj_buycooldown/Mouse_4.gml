@@ -8,6 +8,7 @@ if (global.cash >= value) and can_buy
 	global.cooldown_upgrade_value *= 1.5
 	value = global.cooldown_upgrade_value
 	global.fire_cooldown_max -= 1.8
+		audio_play_sound(sfx_confirm, 1, 0, global.volume);	
 	scr_save_all()
 	if (!instance_exists(obj_fadeout_white))
 {
@@ -18,5 +19,5 @@ fad.image_blend = c_green
 
 else
 {
-	//audio_play_sound(sfx_purchaseerror, 1, 0);	
+	audio_play_sound(sfx_purchaseerror, 1, 0, global.volume);
 }
