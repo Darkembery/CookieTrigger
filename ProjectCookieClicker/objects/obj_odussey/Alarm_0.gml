@@ -1,0 +1,1 @@
+fade(room_startmenu, 10, c_black)

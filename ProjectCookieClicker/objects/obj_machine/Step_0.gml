@@ -16,7 +16,7 @@ else if (can_show) and (instance_exists(obj_upgrade))
 	{
 		if (!instance_exists(obj_upgrade))
 		{
-		instance_create_layer(672, 96, "Player", obj_upgrade)
+		instance_create_layer(680, 51, "Player", obj_upgrade)
 		}
 	}
 }

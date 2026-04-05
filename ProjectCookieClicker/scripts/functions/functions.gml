@@ -67,8 +67,7 @@ with (_instance)
 
 function scr_save_all()
 {
-	if (file_exists("save.initi")) file_delete("save.initi")
-    ini_open("save.initi");
+    ini_open("save.ini");
 
     // Cooldown
     ini_write_real("cooldown_upgrade", "level", global.cooldown_upgrade_level);
@@ -105,13 +104,14 @@ function scr_save_all()
 	ini_write_real("Options", "ScreenShake", global.screen_shake_active);
 	ini_write_real("Options", "Volume", global.volume);
 	ini_write_real("Options", "FPS", global.fps);
+	ini_write_real("Options", "Fullscreen", global.fullscreen);
 	
     ini_close();
 }
 
 function scr_load_all()
 {
-        ini_open("save.initi");
+        ini_open("save.ini");
         
         // Cooldown
         global.cooldown_upgrade_level     = ini_read_real("cooldown_upgrade", "level", 1);
@@ -148,7 +148,7 @@ function scr_load_all()
 		global.screen_shake_active		  = ini_read_real("Options", "ScreenShake", true)
 		global.volume					  = ini_read_real("Options", "Volume", 1)
 		global.fps						  = ini_read_real("Options", "FPS", true);
-        
+		global.fullscreen				  = ini_read_real("Options", "Fullscreen", false)
         ini_close();
 }
 

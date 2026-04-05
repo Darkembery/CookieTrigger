@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemygun",
-    "path":"sprites/spr_enemygun/spr_enemygun.yy",
+    "name":"spr_enemy2gun",
+    "path":"sprites/spr_enemy2gun/spr_enemy2gun.yy",
   },
   "spriteMaskId":null,
   "visible":true,

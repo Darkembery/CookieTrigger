@@ -4,7 +4,7 @@ depth = -y;
 
 if can_follow and instance_exists(obj_player) and !global.pause
 {
-if (obj_player > x) 
+if (obj_player > x)  and hp >= 1
 {
     image_angle += 5
 }
@@ -43,7 +43,8 @@ if (hp <= 0)
 {
 	global.timer += timer_reward
 	global.enemy1_kills++
-	instance_destroy();
+	instance_create_layer(x, y, "Cursor", obj_explosion)
+		instance_destroy();	
 }
 #endregion
 

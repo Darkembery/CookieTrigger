@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_button2",
-    "path":"sprites/spr_button2/spr_button2.yy",
+    "name":"correndo",
+    "path":"sprites/correndo/correndo.yy",
   },
   "spriteMaskId":null,
   "visible":true,

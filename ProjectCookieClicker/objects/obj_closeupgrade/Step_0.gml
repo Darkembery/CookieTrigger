@@ -1,6 +1,13 @@
-x = obj_upgrade.x 
-y = obj_upgrade.y
-image_alpha = 1;
+if instance_exists(obj_upgrade)
+{
+x = obj_upgrade.x + 4 
+y = obj_upgrade.y + 4
+}
+
+else
+{
+instance_destroy()	
+}
 
 if (can_reduce)
 {

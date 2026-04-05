@@ -1,11 +1,11 @@
 image_alpha = 1
 
 if can_go
-x = lerp(x, 384, 0.08)
+x = lerp(x, 353, 0.08)
 else
 {
-x = lerp(x, 672, 0.08)
-instance_destroy(obj_closeupgrade)
+x = lerp(x, 680, 0.08)
+obj_layer.reduce = true;
 instance_destroy(obj_upgradetext)
 instance_destroy(obj_buydamage)
 instance_destroy(obj_buycookies)

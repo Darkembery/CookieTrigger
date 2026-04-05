@@ -17,12 +17,18 @@ draw_set_colour(c_yellow)
 draw_set_colour(c_white)
     draw_text(view_wport / 2 - 300, view_hport - 380 , "Increases the\nweapon's damage.");
 	if global.damage_upgrade_level < 10
-	draw_text(view_wport / 2 - 300, view_hport - 256, string(global.damage) + " -> " + string(global.damage + 1.2))
+	draw_text(view_wport / 2 - 300, view_hport - 270, string(global.damage) + " -> " + string(global.damage + 1.2))
 	else
 	{
 	draw_set_colour(c_yellow)
-	draw_text(view_wport / 2 - 300, view_hport - 256, "Max")
+	draw_text(view_wport / 2 - 300, view_hport - 270, "Max")
+	
 	}
+			if (global.damage_upgrade_level == global.damage_upgrade_max_level)
+draw_text(view_wport / 2 - 300, view_hport - 200, "Max Level")
+else
+draw_text(view_wport / 2 - 300, view_hport - 200, "Price: " + format_number(obj_buydamage.value))
+
 }
 
 else if (button2_sel) 
@@ -35,12 +41,16 @@ draw_set_colour(c_white)
     draw_text(view_wport / 2 - 300, view_hport - 380, "Increases the\nhunting time.");
 	
 	if global.timer_upgrade_level < 10
-	draw_text(view_wport / 2 - 300, view_hport - 256, string(global.timer_start_value) + " -> " + string(global.timer_start_value + 4)) 
+	draw_text(view_wport / 2 - 300, view_hport - 270, string(global.timer_start_value) + " -> " + string(global.timer_start_value + 4)) 
 	else
 	{
 	draw_set_colour(c_yellow)
-	draw_text(view_wport / 2 - 300, view_hport - 256, "Max")
+	draw_text(view_wport / 2 - 300, view_hport - 270, "Max")
 	}
+		if (global.timer_upgrade_level == global.timer_upgrade_max_level)
+draw_text(view_wport / 2 - 300, view_hport - 200, "Max Level")
+else
+draw_text(view_wport / 2 - 300, view_hport - 200, "Price: " + format_number(obj_buytimer.value))
 } 
 else if (button3_sel) 
 {
@@ -51,12 +61,18 @@ draw_set_colour(c_yellow)
 draw_set_colour(c_white)
     draw_text(view_wport / 2 - 300, view_hport - 380, "Reduces the\nshot cooldown.");
 	if global.cooldown_upgrade_level < 10
-	draw_text(view_wport / 2 - 300, view_hport - 256, string(global.fire_cooldown_max) + " -> " + string(global.fire_cooldown_max - 1.8))
+	draw_text(view_wport / 2 - 300, view_hport - 270, string(global.fire_cooldown_max) + " -> " + 
+	string(global.fire_cooldown_max - 1.8))
 	else
 	{
 	draw_set_colour(c_yellow)
-	draw_text(view_wport / 2 - 300, view_hport - 256, "Max")
+	draw_text(view_wport / 2 - 300, view_hport - 270, "Max")
 	}
+	
+	if (global.cooldown_upgrade_level == global.cooldown_upgrade_max_level)
+draw_text(view_wport / 2 - 300, view_hport - 200, "Max Level")
+else
+draw_text(view_wport / 2 - 300, view_hport - 200, "Price: " + format_number(obj_buycooldown.value))
 } 
 else if (button4_sel) 
 {
@@ -67,12 +83,16 @@ draw_set_halign(fa_middle)
 	draw_set_colour(c_white)
     draw_text(view_wport / 2 - 300, view_hport - 380,"Increases the ammo\nper cookie.");
 	if global.ammopc_upgrade_level < 10
-	draw_text(view_wport / 2 - 300, view_hport - 256, string(global.bullets_per_cookie) + " -> "  + string(global.bullets_per_cookie + 5))
+	draw_text(view_wport / 2 - 300, view_hport - 270, string(global.bullets_per_cookie) + " -> "  + string(global.bullets_per_cookie + 5))
 	else
 	{
 	draw_set_colour(c_yellow)
-	draw_text(view_wport / 2 - 300, view_hport - 256, "Max")
+	draw_text(view_wport / 2 - 300, view_hport - 270, "Max")
 		}
+				if (global.ammopc_upgrade_level == global.ammopc_upgrade_max_level)
+draw_text(view_wport / 2 - 300, view_hport - 200, "Max Level")
+else
+draw_text(view_wport / 2 - 300, view_hport - 200, "Price: " + format_number(obj_buycookies.value))
 	}
 }
 

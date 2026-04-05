@@ -2,8 +2,8 @@
  if global.pause exit
  if (instance_exists(obj_player))
 {
-    x = obj_player.x + 18;
-    y = obj_player.y + 14;
+    x = obj_player.x 
+    y = obj_player.y 
 
 var _angle = point_direction(x, y, mouse_x, mouse_y);
 

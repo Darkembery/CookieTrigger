@@ -13,6 +13,7 @@ global.time_alive++
 if global.timer <= 0
 {
 	scr_save_all(); 
+	
 	audio_stop_sound(msc_game)
 	if can_play
 	audio_play_sound(sfx_gameend, 1, 0, global.volume)
@@ -36,9 +37,9 @@ if global.timer <= 0
 	if (keyboard_check_pressed(ord("R"))) and global.debug
 	room_restart()
 	
-	if (!instance_exists(obj_door))
+	if (!instance_exists(obj_doorbox))
 	{
-		instance_create_layer(288, 320, "HUD", obj_door)
+		instance_create_layer(304, 320, "HUD", obj_doorbox)
 	}
 	
 	if (can_shake)

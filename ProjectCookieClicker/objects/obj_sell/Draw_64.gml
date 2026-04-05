@@ -24,7 +24,8 @@ if (can_show) and (show_options)
 
 else if (can_show) and !instance_exists(obj_upgrade)
 {
-	instance_destroy(obj_layer);
+	if instance_exists(obj_layer)
+	obj_layer.reduce = true;
 	draw_set_halign(fa_center);
     draw_set_valign(fa_bottom);
     draw_set_color(c_white);
@@ -33,7 +34,8 @@ else if (can_show) and !instance_exists(obj_upgrade)
 
 else if (!can_show) and !instance_exists(obj_upgrade)
 {
-	instance_destroy(obj_layer);
+	if instance_exists(obj_layer)
+	obj_layer.reduce = true;
 	draw_set_halign(fa_center);
     draw_set_valign(fa_bottom);
     draw_set_color(c_white);

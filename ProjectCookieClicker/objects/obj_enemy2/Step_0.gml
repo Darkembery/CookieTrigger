@@ -3,15 +3,10 @@ depth = -y;
 
 if can_follow and instance_exists(obj_player) and !global.pause
 {
-if (obj_player > x) 
+if (obj_player > x) and hp >= 1
 {
-
+	
 } 
-
-else
-{
-
-}
 
 var _spd = move_speed; 
 var _separation_speed = 0.5; 
@@ -78,29 +73,29 @@ if (hp <= 0)
 {
 	global.timer += timer_reward
 	global.enemy2_kills++
-	instance_destroy();
+	instance_create_layer(x, y, "Cursor", obj_explosion)
+		instance_destroy();	
 }
 
 if flashing
 {
-	image_blend = c_gray
 	can_collide = false
 	move_speed = 0
-	//sprite_index = spr_enemy1_1; // trocar por imagem branca	
+	sprite_index = spr_enemy2hit; // trocar por imagem branca	
 }
 
 else if !flashing
 {
 	move_speed = 1;
 	can_collide = true;
-	image_blend = c_white
+	sprite_index = spr_enemy2
 }
 
-if (image_xscale != 2)
-image_xscale = lerp(image_xscale, 2, 0.1)
+if (image_xscale != 1.5)
+image_xscale = lerp(image_xscale, 1.5, 0.1)
 
-if (image_yscale != 2)
-image_yscale = lerp(image_yscale, 2, 0.1)
+if (image_yscale != 1.5)
+image_yscale = lerp(image_yscale, 1.5, 0.1)
 
 #endregion
 

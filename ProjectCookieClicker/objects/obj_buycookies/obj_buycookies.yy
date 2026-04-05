@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_button1",
-    "path":"sprites/spr_button1/spr_button1.yy",
+    "name":"spr_threecookies",
+    "path":"sprites/spr_threecookies/spr_threecookies.yy",
   },
   "spriteMaskId":null,
   "visible":true,

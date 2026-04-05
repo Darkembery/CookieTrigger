@@ -1,5 +1,5 @@
-x = obj_upgrade.x + 64 
-y = obj_upgrade.y + 86 * 2
+x = obj_upgrade.x + 210
+y = obj_upgrade.y + 96 
 if global.cash >= global.ammopc_upgrade_value
 {
 	got_money = true;	
@@ -22,12 +22,12 @@ if global.ammopc_upgrade_level >= global.ammopc_upgrade_max_level
 
 if can_reduce
 {
-	image_xscale = lerp(image_xscale, 1, 0.08)
-	image_yscale = lerp(image_yscale, 1, 0.08)
+	image_xscale = lerp(image_xscale, 1.5, 0.08)
+	image_yscale = lerp(image_yscale, 1.5, 0.08)
 }
 
 else
 {
-	image_xscale = lerp(image_xscale, 1.2, 0.1)
-	image_yscale = lerp(image_yscale, 1.2, 0.1)
+	image_xscale = lerp(image_xscale, 1.7, 0.1)
+	image_yscale = lerp(image_yscale, 1.7, 0.1)
 }

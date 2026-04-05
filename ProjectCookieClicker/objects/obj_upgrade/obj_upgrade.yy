@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_sellhud",
-    "path":"sprites/spr_sellhud/spr_sellhud.yy",
+    "name":"spr_machinehud",
+    "path":"sprites/spr_machinehud/spr_machinehud.yy",
   },
   "spriteMaskId":null,
   "visible":true,

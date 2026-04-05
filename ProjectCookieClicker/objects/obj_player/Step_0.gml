@@ -20,6 +20,19 @@ else
 is_moving = false;	
 }
 
+ if !global.can_act
+{
+sprite_index = spr_playeridle	
+}
+else if is_moving = true
+{
+sprite_index = spr_playerwalk	
+}
+else if !is_moving = true
+{
+sprite_index = spr_playeridle	
+}
+
 
 x += mx * move_speed;
 y += my * move_speed;
@@ -28,7 +41,6 @@ y += my * move_speed;
 #region Spawn biscoito na mão
 if (global.cookies > 0) and (!instance_exists(obj_cookiehand))
 instance_create_layer(x - 18, y + 14, "Bullets", obj_cookiehand);
-
 
 if (global.cookies == 0) and (instance_exists(obj_cookiehand))
 instance_destroy(obj_cookiehand);
@@ -51,9 +63,5 @@ image_alpha = 1
 #endregion
 
 #region amassadinha
-if (image_xscale != 1.5)
-image_xscale = lerp(image_xscale, 1.5, 0.1)
 
-if (image_yscale != 1.5)
-image_yscale = lerp(image_yscale, 1.5, 0.1)
 #endregion

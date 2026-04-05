@@ -1,7 +1,7 @@
-move_speed = 3.5;
+move_speed = 3;
 
-image_xscale = 1.6
-image_yscale = 1.6
+image_xscale = 1.4
+image_yscale = 1.4
 is_moving = false;
 
 //hp = global.timer

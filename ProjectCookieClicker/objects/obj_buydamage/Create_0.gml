@@ -7,3 +7,5 @@ got_money = false;
 _x = 0
 _y = 0
 selected = false;
+image_xscale = 1.8
+image_yscale = 1.8

@@ -30,12 +30,20 @@ last_angle = image_angle;
 
 if (obj_player > x) 
 {
-    image_yscale = 1;
+    image_yscale = 2.2;
 } 
 
 else
 {
-    image_yscale = -1;
+    image_yscale = -2.2;
+}
+
+if instance_exists(owner)
+{
+if owner.flashing
+sprite_index = spr_enemy2gunhit
+else
+sprite_index = spr_enemy2gun
 }
 
 if (can_aim)
@@ -54,7 +62,7 @@ var by = y + lengthdir_y(dist, dir_target);
 //atira    
 var b = instance_create_layer(bx, by, "Bullets", obj_enemy2bullet);
 b.direction = dir_target;
-b.speed = 8;
+b.speed = 5;
 b.image_angle = dir_target;
 b.owner = id;
 		}

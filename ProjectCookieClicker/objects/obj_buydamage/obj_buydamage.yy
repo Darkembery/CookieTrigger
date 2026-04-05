@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_button3",
-    "path":"sprites/spr_button3/spr_button3.yy",
+    "name":"spr_damageupgrade",
+    "path":"sprites/spr_damageupgrade/spr_damageupgrade.yy",
   },
   "spriteMaskId":null,
   "visible":true,

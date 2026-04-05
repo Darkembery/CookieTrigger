@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_button4",
-    "path":"sprites/spr_button4/spr_button4.yy",
+    "name":"Spr",
+    "path":"sprites/Spr/Spr.yy",
   },
   "spriteMaskId":null,
   "visible":true,
