@@ -17,6 +17,11 @@ if global.timer <= 0
 	if can_play
 	audio_play_sound(sfx_gameend, 1, 0, global.volume)
 	can_play = false;
+	if (instance_exists(obj_gun))
+	instance_destroy(obj_gun)
+	if (instance_exists(obj_cursor))
+	instance_destroy(obj_cursor)
+	
 	if (instance_exists(obj_enemyall))
 	instance_destroy(obj_enemyall)
 	
@@ -25,6 +30,8 @@ if global.timer <= 0
 	
 	if (instance_exists(obj_cookie))
 	instance_destroy(obj_cookie);
+	
+	global.cookies = 0
 	
 	if (keyboard_check_pressed(ord("R"))) and global.debug
 	room_restart()

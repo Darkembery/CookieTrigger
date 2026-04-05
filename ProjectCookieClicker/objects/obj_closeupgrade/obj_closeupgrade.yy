@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy1",
-    "path":"sprites/spr_enemy1/spr_enemy1.yy",
+    "name":"spr_exitbutton",
+    "path":"sprites/spr_exitbutton/spr_exitbutton.yy",
   },
   "spriteMaskId":null,
   "visible":true,

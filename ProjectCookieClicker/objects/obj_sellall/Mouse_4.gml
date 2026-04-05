@@ -16,13 +16,6 @@ fad.image_blend = c_green
 	//audio_play_sound(sfx_purchase_sucess, 1, 0)
 }
 
-else 
-{
-	if (!audio_is_playing(sfx_purchaseerror))
-	audio_play_sound(sfx_purchaseerror, 1, 0)
-    show_debug_message("Nenhum inimigo para vender.");
-}
-
 if (global.enemy2_kills > 0)
 {
 var sell_value = global.enemy2_kills * global.enemy2_value
@@ -40,15 +33,6 @@ fad.image_blend = c_green
 
 //if (!audio_is_playing(sfx_purchase_sucess))
 	//audio_play_sound(sfx_purchase_sucess, 1, 0)
-}
-
-else 
-{
-	if (!audio_is_playing(sfx_purchaseerror))
-	audio_play_sound(sfx_purchaseerror, 1, 0)
-	sell = false;
-	
-    show_debug_message("Nenhum inimigo para vender.");
 }
 
 if sell

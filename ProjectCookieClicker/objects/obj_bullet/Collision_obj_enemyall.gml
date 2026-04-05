@@ -5,8 +5,8 @@ with other
 	flashing = true;
 	var alarm0 = random_range(7.5, 15)
 	alarm[0] = alarm0;
-	image_xscale = 0.7
-	image_yscale = 0.9
+	image_xscale = 1.4
+	image_yscale = 1.9
 	var damage = instance_create_layer(other.x, other.y, 
 	"Instances", obj_timerlosepoints)
 	damage.value = global.damage

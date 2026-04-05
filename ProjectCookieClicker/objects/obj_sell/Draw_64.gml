@@ -22,9 +22,8 @@ if (can_show) and (show_options)
 	
 }
 
-else if (can_show)
+else if (can_show) and !instance_exists(obj_upgrade)
 {
-	if (instance_exists(obj_layer))
 	instance_destroy(obj_layer);
 	draw_set_halign(fa_center);
     draw_set_valign(fa_bottom);
@@ -32,9 +31,8 @@ else if (can_show)
     draw_text(view_wport / 2, view_hport / 2 + 256, "Press E To Talk. . ."); 
 }
 
-else if (!can_show)
+else if (!can_show) and !instance_exists(obj_upgrade)
 {
-	if (instance_exists(obj_layer))
 	instance_destroy(obj_layer);
 	draw_set_halign(fa_center);
     draw_set_valign(fa_bottom);

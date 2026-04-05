@@ -6,12 +6,12 @@ if can_follow and instance_exists(obj_player) and !global.pause
 {
 if (obj_player > x) 
 {
-    
+    image_angle += 5
 }
 
 else
 {
-	
+	image_angle -= 5
 }
 
 var _spd = move_speed; 
@@ -51,24 +51,23 @@ if (hp <= 0)
 #region piscando se tomar dano.
 if flashing
 {
-	image_blend = c_gray
 	can_collide = false
 	move_speed = 0
-	//sprite_index = spr_enemy1_1; // trocar por imagem branca	
+	sprite_index = spr_enemy1hit; // trocar por imagem branca	
 }
 
 else if !flashing
 {
-	image_blend = c_white
 	can_collide = true;
 	move_speed = 1.4
+	sprite_index = spr_enemy1
 }
 
-if (image_xscale != 1)
-image_xscale = lerp(image_xscale, 1, 0.1)
+if (image_xscale != 2)
+image_xscale = lerp(image_xscale, 2, 0.1)
 
-if (image_yscale != 1)
-image_yscale = lerp(image_yscale, 1, 0.1)
+if (image_yscale != 2)
+image_yscale = lerp(image_yscale, 2, 0.1)
 #endregion
 
 #region colisão com o player

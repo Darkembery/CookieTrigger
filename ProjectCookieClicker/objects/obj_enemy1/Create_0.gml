@@ -1,5 +1,7 @@
 move_speed = 1.4;
 flashing = false;
+image_xscale = 2
+image_yscale = 2
 if obj_enemyspawner.number_of_spawns < 150
 {
 move_speed = 1.4

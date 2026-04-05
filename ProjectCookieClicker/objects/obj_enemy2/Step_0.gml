@@ -96,11 +96,11 @@ else if !flashing
 	image_blend = c_white
 }
 
-if (image_xscale != 1)
-image_xscale = lerp(image_xscale, 1, 0.1)
+if (image_xscale != 2)
+image_xscale = lerp(image_xscale, 2, 0.1)
 
-if (image_yscale != 1)
-image_yscale = lerp(image_yscale, 1, 0.1)
+if (image_yscale != 2)
+image_yscale = lerp(image_yscale, 2, 0.1)
 
 #endregion
 

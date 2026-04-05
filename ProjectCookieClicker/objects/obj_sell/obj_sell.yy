@@ -12,8 +12,8 @@
   "name":"obj_sell",
   "overriddenProperties":[],
   "parent":{
-    "name":"sell",
-    "path":"folders/Objects/HUD/Kitchen/Interativos/sell.yy",
+    "name":"Kitchen",
+    "path":"folders/Objects/Kitchen.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy1",
-    "path":"sprites/spr_enemy1/spr_enemy1.yy",
+    "name":"spr_button1",
+    "path":"sprites/spr_button1/spr_button1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

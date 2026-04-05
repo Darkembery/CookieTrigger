@@ -13,6 +13,11 @@ if (len > 0)
 {
     mx /= len;
     my /= len;
+	is_moving = true;
+}
+else
+{
+is_moving = false;	
 }
 
 
@@ -22,7 +27,7 @@ y += my * move_speed;
 #endregion
 #region Spawn biscoito na mão
 if (global.cookies > 0) and (!instance_exists(obj_cookiehand))
-instance_create_layer(x - 18, y + 14, "Player", obj_cookiehand);
+instance_create_layer(x - 18, y + 14, "Bullets", obj_cookiehand);
 
 
 if (global.cookies == 0) and (instance_exists(obj_cookiehand))
@@ -36,15 +41,19 @@ global.reload_cooldown--
 
 #region dano
 if !can_take_damage
+{
 image_alpha = 0.5	
+}
 else
+{
 image_alpha = 1
+}
 #endregion
 
 #region amassadinha
-if (image_xscale != 2)
-image_xscale = lerp(image_xscale, 1, 0.1)
+if (image_xscale != 1.5)
+image_xscale = lerp(image_xscale, 1.5, 0.1)
 
-if (image_yscale != 2)
-image_yscale = lerp(image_yscale, 1, 0.1)
+if (image_yscale != 1.5)
+image_yscale = lerp(image_yscale, 1.5, 0.1)
 #endregion

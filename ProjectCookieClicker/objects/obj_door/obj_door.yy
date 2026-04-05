@@ -11,8 +11,8 @@
   "name":"obj_door",
   "overriddenProperties":[],
   "parent":{
-    "name":"Interativos",
-    "path":"folders/Objects/HUD/Kitchen/Interativos.yy",
+    "name":"Player",
+    "path":"folders/Objects/Player.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy1_1",
-    "path":"sprites/spr_enemy1_1/spr_enemy1_1.yy",
+    "name":"spr_button1",
+    "path":"sprites/spr_button1/spr_button1.yy",
   },
   "spriteMaskId":null,
   "visible":true,
