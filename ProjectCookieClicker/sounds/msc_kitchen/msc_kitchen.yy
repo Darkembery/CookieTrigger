@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":355.05634,
+  "duration":122.83299,
   "exportDir":"",
   "name":"msc_kitchen",
   "parent":{

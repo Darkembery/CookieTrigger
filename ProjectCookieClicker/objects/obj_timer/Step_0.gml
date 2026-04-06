@@ -14,7 +14,7 @@ if global.timer <= 0
 {
 	scr_save_all(); 
 	
-	audio_stop_sound(msc_game)
+	audio_stop_sound(msc_game__3_)
 	if can_play
 	audio_play_sound(sfx_gameend, 1, 0, global.volume)
 	can_play = false;

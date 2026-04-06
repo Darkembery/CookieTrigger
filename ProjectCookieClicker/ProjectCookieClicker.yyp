@@ -152,7 +152,7 @@
     {"id":{"name":"room_tutorial","path":"rooms/room_tutorial/room_tutorial.yy",},},
     {"id":{"name":"functions","path":"scripts/functions/functions.yy",},},
     {"id":{"name":"globals","path":"scripts/globals/globals.yy",},},
-    {"id":{"name":"msc_game","path":"sounds/msc_game/msc_game.yy",},},
+    {"id":{"name":"msc_game__3_","path":"sounds/msc_game__3_/msc_game__3_.yy",},},
     {"id":{"name":"msc_kitchen","path":"sounds/msc_kitchen/msc_kitchen.yy",},},
     {"id":{"name":"msc_mainmenu","path":"sounds/msc_mainmenu/msc_mainmenu.yy",},},
     {"id":{"name":"sfx_confirm","path":"sounds/sfx_confirm/sfx_confirm.yy",},},
