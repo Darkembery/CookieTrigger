@@ -12,8 +12,8 @@
   "name":"obj_sell",
   "overriddenProperties":[],
   "parent":{
-    "name":"Kitchen",
-    "path":"folders/Objects/Kitchen.yy",
+    "name":"boxes",
+    "path":"folders/Objects/Kitchen/boxes.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_button1",
-    "path":"sprites/spr_button1/spr_button1.yy",
+    "name":"spr_mainbox",
+    "path":"sprites/spr_mainbox/spr_mainbox.yy",
   },
   "spriteMaskId":null,
   "visible":true,

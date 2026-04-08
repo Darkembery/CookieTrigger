@@ -11,8 +11,8 @@
   "name":"obj_audiovolume",
   "overriddenProperties":[],
   "parent":{
-    "name":"UI",
-    "path":"folders/Objects/UI.yy",
+    "name":"Settings",
+    "path":"folders/Objects/UI/Settings.yy",
   },
   "parentObjectId":null,
   "persistent":false,

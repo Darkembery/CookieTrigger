@@ -9,8 +9,8 @@
   "name":"obj_ammo",
   "overriddenProperties":[],
   "parent":{
-    "name":"HUD",
-    "path":"folders/Objects/HUD.yy",
+    "name":"Game",
+    "path":"folders/Objects/HUD/Game.yy",
   },
   "parentObjectId":null,
   "persistent":false,

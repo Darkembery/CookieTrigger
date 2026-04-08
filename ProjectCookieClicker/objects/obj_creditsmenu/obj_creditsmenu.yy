@@ -13,8 +13,8 @@
   "name":"obj_creditsmenu",
   "overriddenProperties":[],
   "parent":{
-    "name":"credits",
-    "path":"folders/Objects/UI/Menus/credits.yy",
+    "name":"StartMenu",
+    "path":"folders/Objects/UI/Menus/StartMenu.yy",
   },
   "parentObjectId":null,
   "persistent":false,

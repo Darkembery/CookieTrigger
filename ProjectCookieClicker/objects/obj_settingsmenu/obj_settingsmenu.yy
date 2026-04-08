@@ -13,8 +13,8 @@
   "name":"obj_settingsmenu",
   "overriddenProperties":[],
   "parent":{
-    "name":"settings",
-    "path":"folders/Objects/UI/Menus/settings.yy",
+    "name":"StartMenu",
+    "path":"folders/Objects/UI/Menus/StartMenu.yy",
   },
   "parentObjectId":null,
   "persistent":false,

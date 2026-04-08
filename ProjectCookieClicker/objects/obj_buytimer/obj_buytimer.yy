@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr",
-    "path":"sprites/Spr/Spr.yy",
+    "name":"spr_timerupgradeicon",
+    "path":"sprites/spr_timerupgradeicon/spr_timerupgradeicon.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,0 +1,22 @@
+Fixed:
+Door overlapping layers.
+Enemy 2 damage color.
+Arena music not looping.
+Arena music glitching at the end (Re-rendered in FL Studio).
+Logo overlapping the cursor.
+Machine crashing the game.
+Menu interaction is now disabled during the kitchen fade transition.
+Fixed a wall that was missing in the kitchen, allowing the player to leave the room. (ops..)
+
+Web Fixed:
+Cursor not hiding.
+Texts overlapping the cursor.
+
+Changes:
+Second enemy shooting distance reduced.
+Second enemy HP reduced.
+Added a option to return to start menu. (hold esc for 1 second. or backspace for web build)
+
+Web Note:
+I tried my best to optimize the web version, but I just can't do it. The code is ok and the system seems ok too, I think GameMaker just has some issues with HTML5. I'm sorry! :p
+For the best and smoothest experience, please use the Windows version.

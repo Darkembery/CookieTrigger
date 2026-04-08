@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"msc_game__3_",
   "parent":{
-    "name":"Songs",
-    "path":"folders/Sounds/Songs.yy",
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

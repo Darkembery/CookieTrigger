@@ -5,6 +5,7 @@ x = lerp(x, 353, 0.08)
 else
 {
 x = lerp(x, 680, 0.08)
+if instance_exists(obj_layer)
 obj_layer.reduce = true;
 instance_destroy(obj_upgradetext)
 instance_destroy(obj_buydamage)

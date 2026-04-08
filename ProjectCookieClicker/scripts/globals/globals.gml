@@ -3,6 +3,7 @@ global.time_alive = 1; // save
 global.volume = 1; // save
 global.fps = true; //save
 global.fullscreen = false; // save
+global.can_click = true;
 
 //tutorial
 global.can_start_tutorial = true;
@@ -55,7 +56,7 @@ global.enemy1_value = 40;
 global.enemy2_value = 75;
 
 //config player
-global.cash = 0;
+global.cash = 999999;
 format_number(global.cash);
 global.can_act = true;
 global.pause = false;

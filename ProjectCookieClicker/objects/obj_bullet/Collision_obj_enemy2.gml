@@ -10,6 +10,7 @@ hp = hp - global.damage
 	var damage = instance_create_layer(other.x, other.y, 
 	"Instances", obj_timerlosepoints)
 	damage.value = global.damage
+	damage.color = c_white;
 	obj_enemy2gun.shoot_cooldown = irandom_range(60, 75)
 }
 instance_destroy();

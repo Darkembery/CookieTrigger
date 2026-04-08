@@ -6,8 +6,8 @@
   "name":"obj_sellsprite",
   "overriddenProperties":[],
   "parent":{
-    "name":"Kitchen",
-    "path":"folders/Objects/Kitchen.yy",
+    "name":"Props",
+    "path":"folders/Objects/Kitchen/Props.yy",
   },
   "parentObjectId":null,
   "persistent":false,

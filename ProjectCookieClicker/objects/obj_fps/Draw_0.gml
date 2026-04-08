@@ -1,0 +1,17 @@
+if !global.fps exit
+var _hue = (current_time / 10) % 255;
+
+var _color = make_color_hsv(_hue, 255, 255);
+
+draw_set_font(font_hudBoldSmall)
+
+if (room == room_kitchen)
+draw_text_transformed_colour(x, 45, "FPS: " + string(fps), 1, 1, 0, _color, _color, _color, _color, 1);
+else
+draw_text_transformed_colour(16, 20, "FPS: " + string(fps), 1, 1, 0, _color, _color, _color, _color, 1);
+
+draw_set_colour(c_white);
+
+draw_set_halign(-1)
+draw_set_valign(-1)
+draw_set_alpha(1)

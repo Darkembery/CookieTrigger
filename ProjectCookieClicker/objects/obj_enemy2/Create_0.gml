@@ -11,7 +11,7 @@ timer_reward = irandom_range(1, 3)
 else
 {
 	move_speed = 1.1
-	hp = 90
+	hp = 80
 	damage_to_player = 8
 	can_follow = true;
 	timer_reward = irandom_range(1, 2)

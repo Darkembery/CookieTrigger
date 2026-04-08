@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"upgrade",
-    "path":"folders/Sprites/Kitchen/upgrade.yy",
+    "name":"Interactives",
+    "path":"folders/Sprites/Kitchen/Interactives.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

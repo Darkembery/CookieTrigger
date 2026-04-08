@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"correndo",
-    "path":"sprites/correndo/correndo.yy",
+    "name":"spr_cooldownupgradeicon",
+    "path":"sprites/spr_cooldownupgradeicon/spr_cooldownupgradeicon.yy",
   },
   "spriteMaskId":null,
   "visible":true,

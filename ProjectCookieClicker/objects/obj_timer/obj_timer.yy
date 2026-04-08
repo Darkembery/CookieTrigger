@@ -10,8 +10,8 @@
   "name":"obj_timer",
   "overriddenProperties":[],
   "parent":{
-    "name":"HUD",
-    "path":"folders/Objects/HUD.yy",
+    "name":"Game",
+    "path":"folders/Objects/HUD/Game.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -6,8 +6,8 @@
   "name":"obj_kitchenfloor",
   "overriddenProperties":[],
   "parent":{
-    "name":"UI",
-    "path":"folders/Objects/UI.yy",
+    "name":"Tiles",
+    "path":"folders/Objects/Kitchen/Tiles.yy",
   },
   "parentObjectId":null,
   "persistent":false,

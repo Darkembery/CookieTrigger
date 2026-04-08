@@ -9,8 +9,8 @@
   "name":"obj_explosion",
   "overriddenProperties":[],
   "parent":{
-    "name":"UX",
-    "path":"folders/Objects/UI/UX.yy",
+    "name":"Enemys",
+    "path":"folders/Objects/Enemys.yy",
   },
   "parentObjectId":null,
   "persistent":false,

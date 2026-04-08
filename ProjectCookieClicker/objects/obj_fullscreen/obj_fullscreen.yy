@@ -11,8 +11,8 @@
   "name":"obj_fullscreen",
   "overriddenProperties":[],
   "parent":{
-    "name":"UX",
-    "path":"folders/Objects/UI/UX.yy",
+    "name":"Settings",
+    "path":"folders/Objects/UI/Settings.yy",
   },
   "parentObjectId":null,
   "persistent":false,

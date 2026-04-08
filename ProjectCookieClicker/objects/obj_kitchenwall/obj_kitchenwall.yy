@@ -6,8 +6,8 @@
   "name":"obj_kitchenwall",
   "overriddenProperties":[],
   "parent":{
-    "name":"Kitchen",
-    "path":"folders/Objects/Kitchen.yy",
+    "name":"Tiles",
+    "path":"folders/Objects/Kitchen/Tiles.yy",
   },
   "parentObjectId":null,
   "persistent":false,

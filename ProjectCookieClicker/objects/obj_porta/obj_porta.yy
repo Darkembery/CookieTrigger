@@ -8,8 +8,8 @@
   "name":"obj_porta",
   "overriddenProperties":[],
   "parent":{
-    "name":"Configs",
-    "path":"folders/Objects/UI/Configs.yy",
+    "name":"Props",
+    "path":"folders/Objects/Kitchen/Props.yy",
   },
   "parentObjectId":null,
   "persistent":false,

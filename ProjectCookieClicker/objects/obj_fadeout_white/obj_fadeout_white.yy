@@ -9,8 +9,8 @@
   "name":"obj_fadeout_white",
   "overriddenProperties":[],
   "parent":{
-    "name":"UX",
-    "path":"folders/Objects/UI/UX.yy",
+    "name":"any",
+    "path":"folders/Objects/Miscs/any.yy",
   },
   "parentObjectId":null,
   "persistent":false,

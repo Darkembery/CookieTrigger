@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"cursor",
-    "path":"folders/Objects/Player/cursor.yy",
+    "path":"folders/Objects/Miscs/cursor.yy",
   },
   "parentObjectId":null,
   "persistent":false,
