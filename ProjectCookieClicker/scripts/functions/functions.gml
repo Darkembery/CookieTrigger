@@ -7,6 +7,38 @@ function start_game()
 	global.can_collect_cookies = true;
 }
 
+function exit_web()
+{
+if !global.can_click exit
+if room == room_credits or room == room_settings
+fastfade(room_startmenu, 15, c_black)
+else
+{
+//game_end();
+global.exit_trys++
+instance_create_layer(x, y, "Instances", obj_webexit)
+}
+
+//global.exit_trys++
+//instance_create_layer(x, y, "Instances", obj_webexit)
+}
+
+function exit_pc()
+{
+if !global.can_click exit
+if room == room_credits or room == room_settings
+fastfade(room_startmenu, 15, c_black)
+else
+{
+game_end();
+//global.exit_trys++
+//instance_create_layer(x, y, "Instances", obj_webexit)
+}
+
+//global.exit_trys++
+//instance_create_layer(x, y, "Instances", obj_webexit)	
+}
+
 function screenshake(_value1, _value2)
 {
 	if !global.screen_shake_active exit

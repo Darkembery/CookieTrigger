@@ -17,7 +17,6 @@ function spawn()
 	if (!can_spawn_enemy2)
 	{
 	instance_create_layer(x_location, y_location, "Enemys", obj_enemy1)
-	show_debug_message("Inimigo 1 Spawnado.")
 	}
 	
 	else
@@ -28,13 +27,11 @@ function spawn()
 	if spawn == 1
 	{
 		instance_create_layer(x_location, y_location, "Enemys", obj_enemy1)	
-		show_debug_message("Inimigo 1 Spawnado.")
 	}
 	
 	else if spawn == 2
 	{
 		instance_create_layer(x_location, y_location, "Enemys", obj_enemy2)
-		show_debug_message("Inimigo 2 Spawnado.")
 				}
 			}
 		}
@@ -42,15 +39,5 @@ function spawn()
 
 function spawn_debug()
 {
-	show_debug_message("O Spawn Foi reduzido para: " + string(spawn_delay))	
-	show_debug_message("O Spawn Foi reduzido para: " + string(spawn_delay))	
-	show_debug_message("O Spawn Foi reduzido para: " + string(spawn_delay))	
-	show_debug_message("O Spawn Foi reduzido para: " + string(spawn_delay))	
-	show_debug_message("O Spawn Foi reduzido para: " + string(spawn_delay))	
-	show_debug_message("O Spawn Foi reduzido para: " + string(spawn_delay))	
-	show_debug_message("O Spawn Foi reduzido para: " + string(spawn_delay))	
-	show_debug_message("O Spawn Foi reduzido para: " + string(spawn_delay))	
-	show_debug_message("O Spawn Foi reduzido para: " + string(spawn_delay))	
-	show_debug_message("O Spawn Foi reduzido para: " + string(spawn_delay))	
 	
 }

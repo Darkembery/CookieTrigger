@@ -6,6 +6,10 @@ draw_text(20, 20, "Inimigos 1 Mortos: " + string(global.enemy1_kills))
 draw_text(20, 60, "Inimigos 2 Mortos: " + string(global.enemy2_kills))
 draw_text(20, 100, "Tempo Passado: " + string(global.time_alive))
 draw_text(20, 140, "Tempo Máximo: " + string(global.highest_time_alive))
+draw_text(20, 180, "Inimigos 1: " + string(instance_number(obj_enemy1)))
+draw_text(20, 220, "Inimigos 2: " + string(instance_number(obj_enemy2)))
+draw_text(20, 260, "Total Esperado: " + string(instance_number(obj_enemy1) + instance_number(obj_enemy2)))
+draw_text(20, 300, "Total Atual: " + string(instance_number(obj_enemyall)))
 }
 
 //mostra o timer, e se é igual a 0, então acabou.

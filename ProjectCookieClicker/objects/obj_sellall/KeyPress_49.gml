@@ -3,7 +3,6 @@ if (global.enemy1_kills > 0)
 var sell_value = global.enemy1_kills * global.enemy1_value
 global.cash += sell_value;
 global.enemy1_kills = 0;
-show_debug_message("Venda realizada! Você ganhou: " + string(sell_value));
 total_earned += sell_value;
 sell = true;
 if (!instance_exists(obj_fadeout_white))
@@ -19,7 +18,6 @@ else
 {
 	//if (!audio_is_playing(sfx_purchase_error))
 	//audio_play_sound(sfx_purchase_error, 1, 0)
-    show_debug_message("Nenhum inimigo para vender.");
 }
 
 if (global.enemy2_kills > 0)
@@ -27,7 +25,6 @@ if (global.enemy2_kills > 0)
 var sell_value = global.enemy2_kills * global.enemy2_value
 global.cash += sell_value;
 global.enemy2_kills = 0;
-show_debug_message("Venda realizada! Você ganhou: " + string(sell_value));
 total_earned += sell_value
 sell = true;
 if (!instance_exists(obj_fadeout_white))
@@ -45,7 +42,6 @@ else
 	//if (!audio_is_playing(sfx_purchase_error))
 	//audio_play_sound(sfx_purchase_error, 1, 0)
 	sell = false;
-    show_debug_message("Nenhum inimigo para vender.");
 }
 
 if sell

@@ -3,7 +3,6 @@ if (global.enemy1_kills > 0)
 var sell_value = global.enemy1_kills * global.enemy1_value
 global.cash += sell_value;
 global.enemy1_kills = 0;
-show_debug_message("Venda realizada! Você ganhou: " + string(sell_value));
 total_earned += sell_value;
 sell = true;
 can_play = true;
@@ -21,7 +20,6 @@ if (global.enemy2_kills > 0)
 var sell_value = global.enemy2_kills * global.enemy2_value
 global.cash += sell_value;
 global.enemy2_kills = 0;
-show_debug_message("Venda realizada! Você ganhou: " + string(sell_value));
 total_earned += sell_value
 sell = true;
 can_play = true;
