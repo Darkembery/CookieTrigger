@@ -1,0 +1,1 @@
+audio_play_sound(EntrevistaBackground, 1, 1, global.volume - 0.05)

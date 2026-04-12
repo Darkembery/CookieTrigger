@@ -1,0 +1,16 @@
+if (global.debug)
+{
+draw_set_font(font_hudBold)
+draw_text(20, 20, "Current Time: " + string(global.time_alive))
+draw_text(20, 60, "Highest Time: " + string(global.highest_time_alive))
+//draw_text(20, 100, "Enemy 1: " + string(instance_number(obj_enemy1)))
+//draw_text(20, 140, "Enemy 2: " + string(instance_number(obj_enemy2)))
+//draw_text(20, 200, "Enemy 3: " + string(instance_number(obj_enemy3)))
+//draw_text(20, 240, "Enemy 4: " + string(instance_number(obj_enemy4)))
+//draw_text(20, 280, "Total Logic: " + string(instance_number(obj_enemy1) + instance_number(obj_enemy2) + instance_number(obj_enemy3) + instance_number(obj_enemy4)))
+draw_text(20, 220, "Total Current: " + string(instance_number(obj_enemyall)))
+if instance_exists(obj_enemyspawner)
+draw_text(20, 100, "Spawn Rate: " + string(obj_enemyspawner.spawn_delay))
+draw_text(20, 140, "FPS: " + string(fps))
+draw_text(20, 180, "FPS Real: " + string(fps_real))
+}

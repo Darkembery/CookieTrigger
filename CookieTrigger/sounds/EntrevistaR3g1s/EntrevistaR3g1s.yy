@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"EntrevistaR3g1s",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":3,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":390.721,
+  "exportDir":"",
+  "name":"EntrevistaR3g1s",
+  "parent":{
+    "name":"devroom",
+    "path":"folders/Sounds/devroom.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"EntrevistaR3g1s.mp3",
+  "volume":1.0,
+}

@@ -1,1 +1,0 @@
-can_show = false;

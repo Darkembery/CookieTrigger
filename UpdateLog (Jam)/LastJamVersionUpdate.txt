@@ -1,22 +1,26 @@
 Fixed:
-Door overlapping layers.
-Enemy 2 damage color.
-Arena music not looping.
-Arena music glitching at the end (Re-rendered in FL Studio).
-Logo overlapping the cursor.
-Machine crashing the game.
-Menu interaction is now disabled during the kitchen fade transition.
-Fixed a wall that was missing in the kitchen, allowing the player to leave the room. (ops..)
+Door appearing incorrectly.
+Enemy's stats more balanced.
+Player disappearing inside the door (this door insists on causing bugs 😭😭😭)
+HUD being overlapped by enemies. 
+(depth issue :/)
 
-Web Fixed:
-Cursor not hiding.
-Texts overlapping the cursor.
+Windows Fixed:
+When fullscreen mode is off, the window is now centered.
 
-Changes:
-Second enemy shooting distance reduced.
-Second enemy HP reduced.
-Added a option to return to start menu. (hold esc for 1 second. or backspace for web build)
+Changed:
+The game is more balanced!
+Now the spawn rate is determined by elapsed time! Previously, it was based on the number of spawned enemies.
 
-Web Note:
-I tried my best to optimize the web version, but I just can't do it. The code is ok and the system seems ok too, I think GameMaker just has some issues with HTML5. I'm sorry! :p
-For the best and smoothest experience, please use the Windows version.
+Added:
+Two new enemies!
+1- Cherry Tomato.
+It is fast but has little health.
+2- Watermelon
+Very slow but explodes! (the explosion also affects ingredients!)
+
+A secret code has been added! Hint: Something famous.
+A secret place has been added.
+
+Removed:
+Unlimited hunting time.

@@ -1,0 +1,2 @@
+
+can_collide_self = true;

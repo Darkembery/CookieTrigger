@@ -1,0 +1,1 @@
+fastfade(room_results, 20, c_black)

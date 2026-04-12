@@ -1,0 +1,1 @@
+can_spawn_enemy3 = true;
