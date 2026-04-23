@@ -1,6 +1,4 @@
 {
-  "$GMOperaGXOptions":"v1",
-  "%Name":"Opera GX",
   "name":"Opera GX",
   "option_operagx_display_cursor":false,
   "option_operagx_editUrl":"https://dev.gx.games/games/d86e2ee0-462a-47cd-8a1c-08f595668c56/details",
@@ -23,8 +21,7 @@
   "option_operagx_team_id":"39b9708d-d201-4f6b-8346-be7857dd9ab2",
   "option_operagx_team_name":"DarkEmberyh studio",
   "option_operagx_texture_page":"2048x2048",
-  "option_operagx_transparent_background":false,
   "option_operagx_version":"0.0.0.0",
   "resourceType":"GMOperaGXOptions",
-  "resourceVersion":"2.0",
+  "resourceVersion":"1.1",
 }

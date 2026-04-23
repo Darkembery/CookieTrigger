@@ -7,7 +7,10 @@ draw_set_colour(#fcfc47)
 else
 draw_set_colour(#eef6ff)
 
+if global.current_language = language.en
 draw_text(x, y, "Play Again")
+else if global.current_language = language.ptbr
+draw_text(x, y, "Jogar Denovo")
 
 draw_set_valign(-1)
 draw_set_halign(-1)

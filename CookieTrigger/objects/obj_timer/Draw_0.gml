@@ -4,6 +4,8 @@ draw_set_valign(fa_middle)
 draw_set_halign(fa_center)
 var _x = room_width / 2
 var _y = 40
+if global.current_language = language.en
+{
 if global.timer <= 0
 {
 draw_set_colour(c_yellow)
@@ -15,14 +17,39 @@ else if global.timer <= 10
 {
 draw_set_colour(c_red)
 draw_text(_x, _y,
-		 "Hunting Timer: " + string(global.timer) + "/" + string(120))
+		 "Time remaining: " + string(global.timer) + "/" + string(120))
 }
 
 else if global.timer > 10
 {
 draw_set_colour(c_white)	
 draw_text(_x, _y,
-		 "Hunting Timer: " + string(global.timer) + "/" + string(120))
+		 "Time remaining: " + string(global.timer) + "/" + string(120))
+	}
+}
+
+else if global.current_language = language.ptbr
+{
+	if global.timer <= 0
+{
+draw_set_colour(c_yellow)
+draw_text(_x, _y,
+		 "")
+}
+
+else if global.timer <= 10
+{
+draw_set_colour(c_red)
+draw_text(_x, _y,
+		 "Tempo Restante: " + string(global.timer) + "/" + string(120))
+}
+
+else if global.timer > 10
+{
+draw_set_colour(c_white)	
+draw_text(_x, _y,
+		 "Tempo Restante: " + string(global.timer) + "/" + string(120))
+	}
 }
 		 
 draw_set_valign(-1)

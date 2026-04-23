@@ -1,6 +1,4 @@
 {
-  "$GMObject":"",
-  "%Name":"obj_coffee",
   "eventList":[],
   "managed":true,
   "name":"obj_coffee",
@@ -25,7 +23,7 @@
   "physicsStartAwake":true,
   "properties":[],
   "resourceType":"GMObject",
-  "resourceVersion":"2.0",
+  "resourceVersion":"1.0",
   "solid":false,
   "spriteId":{
     "name":"spr_coffe",

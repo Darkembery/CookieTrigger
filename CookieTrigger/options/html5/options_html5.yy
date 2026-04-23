@@ -1,6 +1,4 @@
 {
-  "$GMHtml5Options":"",
-  "%Name":"HTML5",
   "name":"HTML5",
   "option_html5_allow_fullscreen":true,
   "option_html5_browser_title":"Pixel Game",
@@ -31,5 +29,5 @@
   "option_html5_version":"1.0.0.0",
   "option_html5_webgl":2,
   "resourceType":"GMHtml5Options",
-  "resourceVersion":"2.0",
+  "resourceVersion":"1.0",
 }

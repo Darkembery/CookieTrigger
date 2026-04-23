@@ -5,8 +5,10 @@ draw_set_halign(fa_center)
 
 var kills = (global.enemy1_kills + global.enemy2_kills +
 			 global.enemy3_kills + global.enemy4_kills)
-			 
+if global.current_language = language.en
 draw_text(x, y, "Total Kills: " + string(kills))
+else if global.current_language = language.ptbr
+draw_text(x, y, "Total Inimigos Mortos: " + string(kills))
 
 //draw_set_colour(#fcfc47)
 

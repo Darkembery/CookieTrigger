@@ -1,1 +1,1 @@
-exit_pc()
+exit_web()

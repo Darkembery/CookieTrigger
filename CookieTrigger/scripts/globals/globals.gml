@@ -4,6 +4,13 @@ global.volume = 1; // save
 global.fps = true; //save
 global.fullscreen = false; // save
 global.can_click = true;
+enum language
+{
+	en,
+	ptbr
+}
+
+current_language = language.en
 
 //tutorial
 global.can_start_tutorial = true;
@@ -54,10 +61,11 @@ global.enemy1_kills = 0;
 global.enemy2_kills = 0;
 global.enemy3_kills = 0;
 global.enemy4_kills = 0;
-global.enemy1_value = 40;
-global.enemy2_value = 75;
-global.enemy3_value = 20;
-global.enemy4_value = 50;
+
+global.enemy1_value = 50;
+global.enemy2_value = 100;
+global.enemy3_value = 40;
+global.enemy4_value = 150;
 
 //config player
 global.cash = 0;

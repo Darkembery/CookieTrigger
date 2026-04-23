@@ -1,9 +1,8 @@
 {
-  "$GMtvOSOptions":"v1",
-  "%Name":"tvOS",
   "name":"tvOS",
   "option_tvos_build_number":0,
   "option_tvos_bundle_name":"com.company.game",
+  "option_tvos_cocoapods_checkbox":true,
   "option_tvos_display_cursor":false,
   "option_tvos_display_name":"Pixel Game",
   "option_tvos_enable_broadcast":false,
@@ -27,5 +26,5 @@
   "option_tvos_topshelf_wide_2x":"${base_options_dir}/tvos/topshelf/topshelf_wide_2x.png",
   "option_tvos_version":"1.0.0.0",
   "resourceType":"GMtvOSOptions",
-  "resourceVersion":"2.0",
+  "resourceVersion":"1.3",
 }

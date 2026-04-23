@@ -50,7 +50,7 @@ if (can_aim)
 {
 if can_shoot
 {
-	shoot_cooldown = irandom_range(60, 75)
+	shoot_cooldown = irandom_range(60, 90)
 	if (!audio_is_playing(sfx_enemygun))
 	audio_play_sound(sfx_enemygun, 1, 0, global.volume - 0.15)
 

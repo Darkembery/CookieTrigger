@@ -1,6 +1,4 @@
 {
-  "$GMScript":"v1",
-  "%Name":"globals",
   "isCompatibility":false,
   "isDnD":false,
   "name":"globals",
@@ -9,5 +7,5 @@
     "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
-  "resourceVersion":"2.0",
+  "resourceVersion":"1.0",
 }

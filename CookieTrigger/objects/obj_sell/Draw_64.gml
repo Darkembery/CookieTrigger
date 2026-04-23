@@ -3,6 +3,8 @@ draw_set_font(font_hudBoldBig)
 draw_set_colour(c_white)
 draw_set_alpha(alpha)
 
+if global.current_language = language.en
+{
 if (can_show) and (show_options)
 {
     draw_set_halign(fa_center);
@@ -40,7 +42,50 @@ else if (!can_show) and !instance_exists(obj_upgrade)
     draw_set_valign(fa_bottom);
     draw_set_color(c_white);
     draw_text(view_wport / 2, view_hport / 2 + 256, "Press E To Talk. . ."); 
-}	
+	}	
+}
+
+else if global.current_language = language.ptbr
+{
+if (can_show) and (show_options)
+{
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_bottom);
+    draw_set_color(c_white);
+	
+	if (!instance_exists(obj_layer))
+	instance_create_layer(0, 0, "Instances", obj_layer)
+	if text <= 99
+    draw_text(view_wport / 2, view_hport / 2 + 256, ""); 
+	
+	else if text > 99
+	{
+	draw_set_colour(#84563C)
+	draw_text(view_wport / 2, view_hport / 2 + 256, "Cookies."); 
+	}
+	
+}
+
+else if (can_show) and !instance_exists(obj_upgrade)
+{
+	if instance_exists(obj_layer)
+	obj_layer.reduce = true;
+	draw_set_halign(fa_center);
+    draw_set_valign(fa_bottom);
+    draw_set_color(c_white);
+    draw_text(view_wport / 2, view_hport / 2 + 256, "Aperte 'E' Para Conversar. . ."); 
+}
+
+else if (!can_show) and !instance_exists(obj_upgrade)
+{
+	if instance_exists(obj_layer)
+	obj_layer.reduce = true;
+	draw_set_halign(fa_center);
+    draw_set_valign(fa_bottom);
+    draw_set_color(c_white);
+    draw_text(view_wport / 2, view_hport / 2 + 256, "Aperte 'E' Para Conversar. . ."); 
+	}		
+}
 
 draw_set_halign(-1);
 draw_set_valign(-1);

@@ -10,8 +10,10 @@ draw_set_colour(c_yellow)
 else
 draw_set_colour(c_white)
 
-
+if global.current_language == language.en
 draw_text(x, y, "Settings")
+else if global.current_language == language.ptbr
+draw_text(x, y, "Configurações")
 
 draw_set_valign(-1)
 draw_set_halign(-1)

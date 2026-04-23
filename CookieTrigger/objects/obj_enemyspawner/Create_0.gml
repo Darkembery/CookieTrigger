@@ -1,5 +1,5 @@
 can_spawn = false;
-spawn_delay = 80;
+spawn_delay = 60;
 can_spawn_enemy2 = false;
 can_spawn_enemy3 = false;
 can_spawn_enemy4 = false;
@@ -22,7 +22,7 @@ function spawn() {
    
     var enemy_to_spawn = possible_enemies[irandom(array_length(possible_enemies) - 1)];
     
-	if (instance_number(obj_enemyall) < 25)
+	if (instance_number(obj_enemyall) < 50)
     instance_create_layer(x_location, y_location, "Enemys", enemy_to_spawn);
 }
 

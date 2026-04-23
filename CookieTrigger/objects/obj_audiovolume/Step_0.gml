@@ -1,11 +1,9 @@
-if room == room_kitchen
-audio_master_gain(global.volume)
-else
 audio_master_gain(global.volume)
 
 default_volume = global.volume
 
 if keyboard_check_pressed(189) or (keyboard_check_pressed(vk_subtract))
+or keyboard_check_pressed(vk_left)
 {
 can_show = true;
 if global.volume > 0
@@ -16,7 +14,8 @@ audio_play_sound(sfx_soundtest, 1, 0, global.volume)
 alarm[0] = 45
 }
 
-if keyboard_check_pressed(187) or keyboard_check_pressed(vk_add)
+if keyboard_check_pressed(ord("=")) or keyboard_check_pressed(vk_add)
+or keyboard_check_pressed(vk_right)
 {
 can_show = true;
 if global.volume < 1

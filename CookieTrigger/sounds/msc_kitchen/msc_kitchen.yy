@@ -1,17 +1,13 @@
 {
-  "$GMSound":"v2",
-  "%Name":"msc_kitchen",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
   },
   "bitDepth":1,
-  "channelFormat":0,
-  "compression":3,
-  "compressionQuality":4,
+  "bitRate":128,
+  "compression":2,
   "conversionMode":0,
   "duration":122.83299,
-  "exportDir":"",
   "name":"msc_kitchen",
   "parent":{
     "name":"Songs",
@@ -19,8 +15,9 @@
   },
   "preload":false,
   "resourceType":"GMSound",
-  "resourceVersion":"2.0",
+  "resourceVersion":"1.0",
   "sampleRate":44100,
   "soundFile":"msc_kitchen.mp3",
+  "type":0,
   "volume":1.0,
 }

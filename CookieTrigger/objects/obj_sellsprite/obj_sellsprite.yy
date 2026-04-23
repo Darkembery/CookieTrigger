@@ -1,6 +1,4 @@
 {
-  "$GMObject":"",
-  "%Name":"obj_sellsprite",
   "eventList":[],
   "managed":true,
   "name":"obj_sellsprite",
@@ -25,7 +23,7 @@
   "physicsStartAwake":true,
   "properties":[],
   "resourceType":"GMObject",
-  "resourceVersion":"2.0",
+  "resourceVersion":"1.0",
   "solid":false,
   "spriteId":{
     "name":"spr_strangeplace",

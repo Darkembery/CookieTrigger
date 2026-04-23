@@ -3,8 +3,8 @@ flashing = false;
 can_reward = true;
 
 move_speed = 0.8
-hp = 80
-damage_to_player = 15
+hp = 100
+damage_to_player = 20
 can_play = true;
 can_follow = true;
 timer_reward = irandom_range(1, 3);

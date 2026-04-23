@@ -1,6 +1,4 @@
 {
-  "$GMScript":"v1",
-  "%Name":"functions",
   "isCompatibility":false,
   "isDnD":false,
   "name":"functions",
@@ -9,5 +7,5 @@
     "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
-  "resourceVersion":"2.0",
+  "resourceVersion":"1.0",
 }

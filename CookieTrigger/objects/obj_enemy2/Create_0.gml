@@ -6,9 +6,9 @@ can_reward = true;
 move_speed = 1
 target_speed = 1
 hp = 75
-damage_to_player = 6
+damage_to_player = 10
 can_follow = true;
-timer_reward = irandom_range(1, 4)
+timer_reward = irandom_range(1, 3)
 
 
 can_collide = true;

@@ -59,13 +59,19 @@ if (can_follow && instance_exists(obj_player) && !global.pause)
     y += _vspd;
 }
 
-if distance_to_object(obj_player) <= 20
+if distance_to_object(obj_player) <= 25
 current_state = enemy4_state.explosion
 
-if (hp <= 0 && current_state != enemy4_state.explosion)
+if (hp <= 0 && current_state != enemy4_state.explosion) and !place_meeting(x, y, obj_explosiondamage)
 {
     global.enemy4_kills++;
-    current_state = enemy4_state.explosion;
+	instance_create_layer(x, y, "HUD", obj_deatheffect)
+	instance_destroy(self);
+}
+
+else if (hp <= 0 && place_meeting(x, y, obj_explosiondamage))
+{
+current_state = enemy4_state.explosion
 }
 #endregion
 

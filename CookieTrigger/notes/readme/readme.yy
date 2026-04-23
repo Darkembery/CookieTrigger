@@ -1,12 +1,9 @@
 {
-  "$GMNotes":"v1",
-  "%Name":"readme",
   "name":"readme",
-  "openedOnFirstLoad":true,
   "parent":{
     "name":"Notes",
     "path":"folders/Notes.yy",
   },
   "resourceType":"GMNotes",
-  "resourceVersion":"2.0",
+  "resourceVersion":"1.1",
 }

@@ -1,0 +1,1 @@
+audio_play_sound(msc_results, 1, 1, global.volume - 0.2)

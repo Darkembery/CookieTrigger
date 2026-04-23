@@ -1,6 +1,4 @@
 {
-  "$GMObject":"",
-  "%Name":"obj_prop_3",
   "eventList":[],
   "managed":true,
   "name":"obj_prop_3",
@@ -25,7 +23,7 @@
   "physicsStartAwake":true,
   "properties":[],
   "resourceType":"GMObject",
-  "resourceVersion":"2.0",
+  "resourceVersion":"1.0",
   "solid":false,
   "spriteId":{
     "name":"DevProps3",

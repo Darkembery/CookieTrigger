@@ -6,6 +6,7 @@ function start_game()
 	if global.cookies > 0
 	global.cookies = 0;
 	global.can_collect_cookies = true;
+	global.pause = false;
 }
 
 function exit_web()
@@ -17,7 +18,7 @@ fastfade(room_startmenu, 15, c_black)
 else if room == room_results
 {
 fade(room_kitchen, 15, c_black);
-global.can_act = true;
+global.pause = false;
 }
 
 else
@@ -33,14 +34,16 @@ instance_create_layer(x, y, "Instances", obj_webexit)
 
 function exit_pc()
 {
+
 if !global.can_click exit
 if room == room_credits or room == room_settings
 fastfade(room_startmenu, 15, c_black)
 
 else if room == room_results
 {
-fade(room_kitchen, 15, c_black);
-global.can_act = true;
+fastfade(room_kitchen, 15, c_black);
+global.pause = false;
+global.can_click = false;
 }
 
 else
@@ -150,6 +153,7 @@ function scr_save_all()
 	ini_write_real("Options", "Volume", global.volume);
 	ini_write_real("Options", "FPS", global.fps);
 	ini_write_real("Options", "Fullscreen", global.fullscreen);
+	ini_write_real("Options", "Language", global.current_language);
 	
     ini_close();
 }
@@ -210,12 +214,16 @@ ini_close()
 		global.volume					  = ini_read_real("Options", "Volume", 1)
 		global.fps						  = ini_read_real("Options", "FPS", true);
 		global.fullscreen				  = ini_read_real("Options", "Fullscreen", false)
+		global.current_language			  = ini_read_real("Options", "Language", global.current_language = language.en)
         ini_close();
 }
 
 function format_number(_value)
 {
-    var suffixes = ["", "K", "M", "B","Cheater"];
+	if global.current_language = language.en
+    var suffixes = ["", " K", " M", " B", " Infinity"];
+	else
+	var suffixes = ["", " Mil R$", " M", " B", " Infinito"];
     var v = _value;
     var index = 0;
 

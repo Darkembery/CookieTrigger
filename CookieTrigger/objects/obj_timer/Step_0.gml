@@ -4,7 +4,7 @@ if global.pause exit
 if timer_cooldown > 0
 timer_cooldown--
 
-else if timer_cooldown == 0 and global.timer > 0
+else if timer_cooldown == 0 and global.timer > 0 and !global.pause
 {
 timer_cooldown = 68
 global.timer--

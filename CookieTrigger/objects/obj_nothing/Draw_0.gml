@@ -10,7 +10,10 @@ draw_set_colour(c_yellow)
 else
 draw_set_colour(c_white)
 
-draw_text(x, y, "Nevermind.")
+if global.current_language = language.en
+draw_text(x, y, "Nevermind..")
+else if global.current_language = language.ptbr
+draw_text(x, y, "Nada..")
 
 draw_set_valign(-1)
 draw_set_halign(-1)

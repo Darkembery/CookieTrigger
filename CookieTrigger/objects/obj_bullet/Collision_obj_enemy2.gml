@@ -11,6 +11,5 @@ hp = hp - global.damage
 	"Instances", obj_timerlosepoints)
 	damage.value = global.damage
 	damage.color = c_white;
-	self.shoot_cooldown = irandom_range(60, 75)
 }
 instance_destroy();
